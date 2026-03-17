@@ -33,6 +33,7 @@ export default function RootLayout({
               <a href="/subjects/physical-science" className="hover:text-blue-600">Physical Science</a>
               <a href="/subjects/math" className="hover:text-blue-600">Math</a>
               <a href="/gizmos" className="hover:text-blue-600">All Gizmos</a>
+              <a href="/pricing" className="hover:text-blue-600">Pricing</a>
             </nav>
           </div>
         </header>

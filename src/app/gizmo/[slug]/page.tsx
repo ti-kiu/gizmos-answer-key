@@ -88,6 +88,24 @@ export default function GizmoPage({ params }: { params: { slug: string } }) {
         <h3 className="text-lg font-bold text-gray-800 mb-4">Related Gizmos</h3>
         <p className="text-gray-500 text-sm">More {gizmo.subject} gizmos coming soon.</p>
       </div>
+
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: gizmo.sections.flatMap(s =>
+              s.questions.map(q => ({
+                '@type': 'Question',
+                name: q.question,
+                acceptedAnswer: { '@type': 'Answer', text: q.answer },
+              }))
+            ),
+          }),
+        }}
+      />
     </div>
   )
 }
