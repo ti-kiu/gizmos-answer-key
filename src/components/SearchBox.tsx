@@ -57,7 +57,7 @@ export default function SearchBox() {
           {results.slice(0, 8).map(r => (
             <button
               key={r.slug}
-              onClick={() => { router.push(`/gizmo/${r.slug}`); setOpen(false); setQuery('') }}
+              onClick={() => { router.push(r.slug.startsWith('ai/') ? `/gizmo/${r.slug}` : `/gizmo/${r.slug}`); setOpen(false); setQuery('') }}
               className="w-full text-left px-4 py-3 hover:bg-blue-50 flex items-center justify-between border-b last:border-0"
             >
               <span className="font-medium text-gray-800">{r.title}</span>

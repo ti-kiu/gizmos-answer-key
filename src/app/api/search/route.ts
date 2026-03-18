@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
     const alreadyExists = localResults.some(r => r.slug === dynamicSlug)
     if (dynamicSlug.length > 2 && !alreadyExists) {
       localResults.push({
-        slug: `ai-${dynamicSlug}`,
+        slug: `ai/${dynamicSlug}`,
         title: q.split(' ').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
         subject: 'AI Generated',
         grade: 'All',
