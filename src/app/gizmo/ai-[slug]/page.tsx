@@ -16,7 +16,8 @@ interface GizmoData {
 export default function AiGizmoPage() {
   const params = useParams()
   const slug = (params?.slug as string) || ''
-  const title = slug ? slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : ''
+  const cleanSlug = slug.replace(/^ai-/, '')
+  const title = cleanSlug ? cleanSlug.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()) : ''
 
   const [data, setData] = useState<GizmoData | null>(null)
   const [loading, setLoading] = useState(true)

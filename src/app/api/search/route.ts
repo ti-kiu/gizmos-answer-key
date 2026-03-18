@@ -18,7 +18,7 @@ export async function GET(req: NextRequest) {
   if (localResults.length < 3) {
     const dynamicSlug = q.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
     const alreadyExists = localResults.some(r => r.slug === dynamicSlug)
-    if (!alreadyExists) {
+    if (dynamicSlug.length > 2 && !alreadyExists) {
       localResults.push({
         slug: `ai-${dynamicSlug}`,
         title: q.split(' ').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
