@@ -15,14 +15,15 @@ interface GizmoData {
 
 export default function AiGizmoPage() {
   const params = useParams()
-  const slug = params.slug as string
-  const title = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+  const slug = (params?.slug as string) || ''
+  const title = slug ? slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : ''
 
   const [data, setData] = useState<GizmoData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
   useEffect(() => {
+    if (!title) { setError('Invalid page.'); setLoading(false); return; }
     fetch('/api/ai/generate-answers', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
