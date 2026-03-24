@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 
-export default function AiExplainButton({ question, gizmo }: { question: string; gizmo: string }) {
+export default function AiExplainButton({ question, gizmoSlug }: { question: string; gizmoSlug: string }) {
   const [explanation, setExplanation] = useState('')
   const [loading, setLoading] = useState(false)
 
@@ -10,7 +10,7 @@ export default function AiExplainButton({ question, gizmo }: { question: string;
     const res = await fetch('/api/explain', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ question, gizmo }),
+      body: JSON.stringify({ question, gizmo: gizmoSlug }),
     })
     const data = await res.json()
     setExplanation(data.explanation)
