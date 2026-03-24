@@ -1,15 +1,12 @@
-import { Metadata } from 'next'
+'use client'
+import { useSearchParams } from 'next/navigation'
 import { getAllGizmos } from '@/lib/gizmos'
 import GizmoCard from '@/components/GizmoCard'
 import SearchBox from '@/components/SearchBox'
 
-export const metadata: Metadata = {
-  title: 'Search Gizmos Answer Key',
-  description: 'Search for any ExploreLearning Gizmo answer key.',
-}
-
-export default function SearchPage({ searchParams }: { searchParams: { q?: string } }) {
-  const q = searchParams.q?.toLowerCase().trim() || ''
+export default function SearchPage() {
+  const searchParams = useSearchParams()
+  const q = searchParams.get('q')?.toLowerCase().trim() || ''
   const all = getAllGizmos()
   const results = q
     ? all.filter(g =>
@@ -27,7 +24,7 @@ export default function SearchPage({ searchParams }: { searchParams: { q?: strin
       {q ? (
         <>
           <h1 className="text-2xl font-bold text-gray-900 mb-2">
-            {results.length > 0 ? `${results.length} results for "${searchParams.q}"` : `No results for "${searchParams.q}"`}
+            {results.length > 0 ? `${results.length} results for "${q}"` : `No results for "${q}"`}
           </h1>
           {results.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
@@ -35,10 +32,7 @@ export default function SearchPage({ searchParams }: { searchParams: { q?: strin
             </div>
           ) : (
             <div className="mt-8 text-center py-12 bg-gray-50 rounded-2xl">
-              <p className="text-gray-500 mb-4">Try a different keyword, or browse popular Gizmos below.</p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 text-left">
-                {all.slice(0, 6).map(g => <GizmoCard key={g.slug} gizmo={g} />)}
-              </div>
+              <p className="text-gray-500 mb-4">Try a different keyword</p>
             </div>
           )}
         </>
