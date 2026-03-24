@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getGizmoBySlug, getAllGizmos } from '@/lib/gizmos'
-import AiExplainButton from '@/components/AiExplainButton'
 
 export async function generateStaticParams() {
   const gizmos = getAllGizmos()
@@ -61,13 +60,10 @@ export default function GizmoPage({ params }: { params: { slug: string } }) {
                     {q.question}
                   </p>
                   {isFree ? (
-                    <>
-                      <div className="bg-green-50 border border-green-200 rounded-lg p-3 mb-3">
-                        <span className="text-xs font-semibold text-green-700 uppercase tracking-wide">Answer</span>
-                        <p className="text-gray-800 mt-1">{q.answer}</p>
-                      </div>
-                      <AiExplainButton question={q.question} gizmoSlug={params.slug} />
-                    </>
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+                      <span className="text-xs font-semibold text-green-700 uppercase tracking-wide">Answer</span>
+                      <p className="text-gray-800 mt-1">{q.answer}</p>
+                    </div>
                   ) : (
                     <div className="bg-gray-50 border border-dashed rounded-lg p-4 text-center">
                       <p className="text-gray-500 text-sm mb-3">🔒 Unlock full answers</p>
