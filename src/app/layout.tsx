@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import AuthButton from '@/components/AuthButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,6 +36,7 @@ export default function RootLayout({
               <a href="/gizmos" className="hover:text-blue-600">All Gizmos</a>
               <a href="/pricing" className="hover:text-blue-600">Pricing</a>
             </nav>
+            <AuthButton />
           </div>
         </header>
         <main>{children}</main>
