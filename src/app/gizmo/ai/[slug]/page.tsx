@@ -2,6 +2,11 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import AiExplainButton from '@/components/AiExplainButton'
+import { getAllGizmos } from '@/lib/gizmos'
+
+export function generateStaticParams() {
+  return getAllGizmos().map((g) => ({ slug: `ai-${g.slug}` }))
+}
 
 interface Question { question: string; answer: string }
 interface Section { title: string; questions: Question[] }
