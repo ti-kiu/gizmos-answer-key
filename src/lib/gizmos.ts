@@ -530,3 +530,11 @@ export function getAllGizmos(): Gizmo[] {
 export function getGizmoBySlug(slug: string): Gizmo | undefined {
   return gizmos.find((g) => g.slug === slug)
 }
+
+export function getRelatedGizmos(slug: string, limit = 3): Gizmo[] {
+  const current = gizmos.find((g) => g.slug === slug)
+  if (!current) return []
+  return gizmos
+    .filter((g) => g.slug !== slug && g.subject_slug === current.subject_slug)
+    .slice(0, limit)
+}

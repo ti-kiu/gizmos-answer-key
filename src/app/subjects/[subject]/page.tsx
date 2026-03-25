@@ -11,6 +11,8 @@ const SUBJECTS: Record<string, string> = {
   'engineering': 'Engineering',
 }
 
+const BASE = 'https://www.gizmosanswerkey.com'
+
 export async function generateStaticParams() {
   return Object.keys(SUBJECTS).map(s => ({ subject: s }))
 }
@@ -30,6 +32,15 @@ export default function SubjectPage({ params }: { params: { subject: string } })
 
   const gizmos = getAllGizmos().filter(g => g.subject_slug === params.subject)
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE },
+      { '@type': 'ListItem', position: 2, name: `${name} Gizmos`, item: `${BASE}/subjects/${params.subject}` },
+    ],
+  }
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
       <nav className="text-sm text-gray-500 mb-6">
@@ -48,6 +59,8 @@ export default function SubjectPage({ params }: { params: { subject: string } })
           <a href="/gizmos" className="mt-4 inline-block text-blue-600 hover:underline">Browse all Gizmos →</a>
         </div>
       )}
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     </div>
   )
 }

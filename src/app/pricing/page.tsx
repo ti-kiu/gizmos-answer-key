@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import PayPalCheckout from '@/components/PayPalCheckout'
 
 export const metadata: Metadata = {
   title: 'Pricing - Gizmos Answer Key',
@@ -17,8 +18,7 @@ const plans = [
       'Search all Gizmos',
       'Browse by subject',
     ],
-    cta: 'Get Started',
-    href: '/',
+    plan: null,
   },
   {
     name: 'Monthly',
@@ -31,8 +31,7 @@ const plans = [
       'Image upload & recognition',
       'Priority support',
     ],
-    cta: 'Start Monthly',
-    href: '/signup?plan=monthly',
+    plan: 'monthly' as const,
   },
   {
     name: 'Annual',
@@ -46,8 +45,7 @@ const plans = [
       'Early access to new features',
       'Priority support',
     ],
-    cta: 'Start Annual',
-    href: '/signup?plan=annual',
+    plan: 'annual' as const,
   },
 ]
 
@@ -94,16 +92,19 @@ export default function PricingPage() {
                 </li>
               ))}
             </ul>
-            <a
-              href={plan.href}
-              className={`block text-center py-3 rounded-xl font-semibold transition-colors ${
-                plan.highlight
-                  ? 'bg-white text-blue-600 hover:bg-blue-50'
-                  : 'bg-blue-600 text-white hover:bg-blue-700'
-              }`}
-            >
-              {plan.cta}
-            </a>
+
+            {plan.plan ? (
+              <div className={plan.highlight ? 'bg-white rounded-xl p-2' : ''}>
+                <PayPalCheckout plan={plan.plan} />
+              </div>
+            ) : (
+              <a
+                href="/"
+                className="block text-center py-3 rounded-xl font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+              >
+                Get Started Free
+              </a>
+            )}
           </div>
         ))}
       </div>
