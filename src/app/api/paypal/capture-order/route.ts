@@ -10,12 +10,19 @@ export async function POST(request: Request) {
 
   try {
     const capture = await captureOrder(orderId)
+    console.log('PayPal capture response:', JSON.stringify(capture, null, 2))
 
     if (capture.status !== 'COMPLETED') {
       return NextResponse.json({ error: 'Payment not completed' }, { status: 402 })
     }
 
     const plan = capture.purchase_units?.[0]?.custom_id as 'monthly' | 'annual'
+    console.log('Extracted plan:', plan)
+    
+    if (!plan) {
+      return NextResponse.json({ error: 'Invalid plan in order' }, { status: 400 })
+    }
+
     const expiresAt = new Date()
     if (plan === 'annual') {
       expiresAt.setFullYear(expiresAt.getFullYear() + 1)
