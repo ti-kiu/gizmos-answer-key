@@ -32,8 +32,8 @@ export async function createOrder(plan: 'monthly' | 'annual') {
       intent: 'CAPTURE',
       purchase_units: [
         {
+          reference_id: plan,
           description,
-          custom_id: plan,
           amount: { currency_code: 'USD', value: amount },
         },
       ],

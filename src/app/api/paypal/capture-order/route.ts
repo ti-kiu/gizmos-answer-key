@@ -16,7 +16,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Payment not completed' }, { status: 402 })
     }
 
-    const plan = capture.purchase_units?.[0]?.custom_id as 'monthly' | 'annual'
+    const plan = capture.purchase_units?.[0]?.reference_id as 'monthly' | 'annual'
     console.log('Extracted plan:', plan)
     
     if (!plan) {
