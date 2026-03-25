@@ -25,10 +25,15 @@ export default function PayPalCheckout({ plan }: { plan: 'monthly' | 'annual' })
     )
     const { data: { user } } = await supabase.auth.getUser()
 
+    if (!user?.id) {
+      setError('Please sign in first to complete your purchase.')
+      return
+    }
+
     const res = await fetch('/api/paypal/capture-order', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ orderId: data.orderID, userId: user?.id }),
+      body: JSON.stringify({ orderId: data.orderID, userId: user.id }),
     })
     const result = await res.json()
     if (result.success) {
