@@ -521,6 +521,263 @@ const gizmos: Gizmo[] = [
       },
     ],
   },
+  {
+    slug: 'food-chain',
+    title: 'Food Chain',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '5-7',
+    description: 'Explore how energy flows through ecosystems via food chains and food webs.',
+    sections: [
+      {
+        title: 'Prior Knowledge Questions',
+        questions: [
+          { question: 'What is a producer?', answer: 'A producer is an organism that makes its own food using sunlight, such as plants and algae.' },
+          { question: 'What is a consumer?', answer: 'A consumer is an organism that gets energy by eating other organisms.' },
+          { question: 'What is a decomposer?', answer: 'A decomposer breaks down dead organisms and returns nutrients to the soil, such as fungi and bacteria.' },
+        ],
+      },
+      {
+        title: 'Activity A – Energy Flow',
+        questions: [
+          { question: 'In which direction does energy flow in a food chain?', answer: 'Energy flows from producers to primary consumers, then to secondary consumers, and so on up the chain.' },
+          { question: 'What percentage of energy is transferred from one trophic level to the next?', answer: 'Only about 10% of energy is transferred from one trophic level to the next; the rest is lost as heat.' },
+          { question: 'What happens to a food web if one species is removed?', answer: 'Removing one species can cause a cascade effect, increasing some populations and decreasing others, potentially destabilizing the ecosystem.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'human-respiratory-system',
+    title: 'Human Respiratory System',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '6-8',
+    description: 'Investigate how the lungs and respiratory system deliver oxygen to the body and remove carbon dioxide.',
+    sections: [
+      {
+        title: 'Prior Knowledge Questions',
+        questions: [
+          { question: 'What is the main function of the respiratory system?', answer: 'The main function is to bring oxygen into the body and remove carbon dioxide through breathing.' },
+          { question: 'What is the role of the diaphragm?', answer: 'The diaphragm is a dome-shaped muscle that contracts and relaxes to control breathing by changing the volume of the chest cavity.' },
+        ],
+      },
+      {
+        title: 'Activity A – Gas Exchange',
+        questions: [
+          { question: 'Where does gas exchange occur in the lungs?', answer: 'Gas exchange occurs in the alveoli, tiny air sacs surrounded by capillaries.' },
+          { question: 'What gas moves from the alveoli into the blood?', answer: 'Oxygen (O₂) moves from the alveoli into the blood.' },
+          { question: 'What gas moves from the blood into the alveoli?', answer: 'Carbon dioxide (CO₂) moves from the blood into the alveoli to be exhaled.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'magnetism',
+    title: 'Magnetism',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '5-7',
+    description: 'Explore magnetic fields, poles, and how magnets attract and repel each other.',
+    sections: [
+      {
+        title: 'Prior Knowledge Questions',
+        questions: [
+          { question: 'What are the two poles of a magnet?', answer: 'The two poles are the north pole and the south pole.' },
+          { question: 'What happens when two like poles are brought together?', answer: 'Like poles repel each other (N-N or S-S push apart).' },
+          { question: 'What happens when two unlike poles are brought together?', answer: 'Unlike poles attract each other (N-S pull together).' },
+        ],
+      },
+      {
+        title: 'Activity A – Magnetic Fields',
+        questions: [
+          { question: 'What is a magnetic field?', answer: 'A magnetic field is the region around a magnet where magnetic forces can be detected, represented by field lines.' },
+          { question: 'Which materials are attracted to magnets?', answer: 'Ferromagnetic materials such as iron, nickel, and cobalt are attracted to magnets.' },
+          { question: 'What is Earth\'s magnetic field caused by?', answer: 'Earth\'s magnetic field is caused by the movement of molten iron in its outer core.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'energy-transformations',
+    title: 'Energy Transformations',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '6-8',
+    description: 'Investigate how energy changes from one form to another in everyday situations.',
+    sections: [
+      {
+        title: 'Prior Knowledge Questions',
+        questions: [
+          { question: 'What is kinetic energy?', answer: 'Kinetic energy is the energy of motion. Any moving object has kinetic energy.' },
+          { question: 'What is potential energy?', answer: 'Potential energy is stored energy based on an object\'s position or condition.' },
+          { question: 'State the law of conservation of energy.', answer: 'Energy cannot be created or destroyed; it can only be transformed from one form to another.' },
+        ],
+      },
+      {
+        title: 'Activity A – Types of Energy',
+        questions: [
+          { question: 'What energy transformation occurs in a light bulb?', answer: 'Electrical energy is transformed into light energy and heat energy.' },
+          { question: 'What energy transformation occurs when a ball is dropped?', answer: 'Gravitational potential energy is transformed into kinetic energy as the ball falls.' },
+          { question: 'What energy transformation occurs in a solar panel?', answer: 'Light energy (solar energy) is transformed into electrical energy.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'states-of-matter',
+    title: 'States of Matter',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '5-7',
+    description: 'Explore the properties of solids, liquids, and gases and how matter changes between states.',
+    sections: [
+      {
+        title: 'Prior Knowledge Questions',
+        questions: [
+          { question: 'What are the three common states of matter?', answer: 'The three common states of matter are solid, liquid, and gas.' },
+          { question: 'How are the particles arranged in a solid?', answer: 'In a solid, particles are tightly packed in a fixed arrangement and vibrate in place.' },
+          { question: 'How are the particles arranged in a gas?', answer: 'In a gas, particles are far apart and move rapidly in all directions.' },
+        ],
+      },
+      {
+        title: 'Activity A – Phase Changes',
+        questions: [
+          { question: 'What is melting?', answer: 'Melting is the phase change from solid to liquid, which requires the addition of heat energy.' },
+          { question: 'What is evaporation?', answer: 'Evaporation is the phase change from liquid to gas at the surface of a liquid.' },
+          { question: 'What is condensation?', answer: 'Condensation is the phase change from gas to liquid, which releases heat energy.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'water-cycle',
+    title: 'Water Cycle',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '5-7',
+    description: 'Trace the continuous movement of water through Earth\'s systems via evaporation, condensation, and precipitation.',
+    sections: [
+      {
+        title: 'Prior Knowledge Questions',
+        questions: [
+          { question: 'What is the water cycle?', answer: 'The water cycle is the continuous movement of water through Earth\'s systems: evaporation, condensation, precipitation, and collection.' },
+          { question: 'What energy source drives the water cycle?', answer: 'The Sun provides the energy that drives the water cycle by heating water and causing evaporation.' },
+        ],
+      },
+      {
+        title: 'Activity A – Stages of the Water Cycle',
+        questions: [
+          { question: 'What is evaporation?', answer: 'Evaporation is the process by which liquid water is converted to water vapor by solar energy.' },
+          { question: 'What is condensation in the water cycle?', answer: 'Condensation is when water vapor cools and changes back into liquid water, forming clouds.' },
+          { question: 'What is precipitation?', answer: 'Precipitation is water that falls from clouds to Earth\'s surface as rain, snow, sleet, or hail.' },
+          { question: 'What is transpiration?', answer: 'Transpiration is the process by which plants release water vapor through their leaves into the atmosphere.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'volcanoes',
+    title: 'Volcanoes',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '6-8',
+    description: 'Investigate how volcanoes form, erupt, and shape Earth\'s surface.',
+    sections: [
+      {
+        title: 'Prior Knowledge Questions',
+        questions: [
+          { question: 'What is magma?', answer: 'Magma is molten rock found beneath Earth\'s surface.' },
+          { question: 'What is lava?', answer: 'Lava is magma that has reached Earth\'s surface through a volcanic eruption.' },
+          { question: 'Where do most volcanoes occur?', answer: 'Most volcanoes occur along tectonic plate boundaries, especially at subduction zones and mid-ocean ridges.' },
+        ],
+      },
+      {
+        title: 'Activity A – Types of Volcanoes',
+        questions: [
+          { question: 'What is a shield volcano?', answer: 'A shield volcano has broad, gently sloping sides formed by low-viscosity lava flows, like those in Hawaii.' },
+          { question: 'What is a composite volcano (stratovolcano)?', answer: 'A composite volcano has steep sides built up from alternating layers of lava and ash, and tends to have explosive eruptions.' },
+          { question: 'What causes a volcanic eruption?', answer: 'Eruptions are caused by pressure buildup from magma and dissolved gases rising through the crust.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'moon-phases',
+    title: 'Moon Phases',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '5-7',
+    description: 'Explore the phases of the Moon and understand why the Moon appears to change shape.',
+    sections: [
+      {
+        title: 'Prior Knowledge Questions',
+        questions: [
+          { question: 'Why does the Moon appear to change shape?', answer: 'The Moon appears to change shape because we see different portions of its sunlit side as it orbits Earth.' },
+          { question: 'How long does it take the Moon to complete one orbit around Earth?', answer: 'The Moon takes approximately 29.5 days to complete one orbit around Earth.' },
+        ],
+      },
+      {
+        title: 'Activity A – Phases of the Moon',
+        questions: [
+          { question: 'What is a new moon?', answer: 'A new moon occurs when the Moon is between Earth and the Sun, and the side facing Earth is not illuminated.' },
+          { question: 'What is a full moon?', answer: 'A full moon occurs when Earth is between the Sun and the Moon, and the entire sunlit side of the Moon faces Earth.' },
+          { question: 'What are the phases in order starting from new moon?', answer: 'New Moon → Waxing Crescent → First Quarter → Waxing Gibbous → Full Moon → Waning Gibbous → Third Quarter → Waning Crescent → New Moon.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'atoms-and-molecules',
+    title: 'Atoms and Molecules',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '6-8',
+    description: 'Explore the structure of atoms and how atoms combine to form molecules.',
+    sections: [
+      {
+        title: 'Prior Knowledge Questions',
+        questions: [
+          { question: 'What is an atom?', answer: 'An atom is the smallest unit of an element that retains the chemical properties of that element.' },
+          { question: 'What are the three subatomic particles?', answer: 'The three subatomic particles are protons (positive charge), neutrons (no charge), and electrons (negative charge).' },
+          { question: 'Where are protons and neutrons found in an atom?', answer: 'Protons and neutrons are found in the nucleus at the center of the atom.' },
+        ],
+      },
+      {
+        title: 'Activity A – Atomic Structure',
+        questions: [
+          { question: 'What is the atomic number of an element?', answer: 'The atomic number is the number of protons in the nucleus of an atom, which determines the element\'s identity.' },
+          { question: 'What is a molecule?', answer: 'A molecule is formed when two or more atoms bond together chemically.' },
+          { question: 'What is the difference between an element and a compound?', answer: 'An element contains only one type of atom, while a compound contains two or more different types of atoms chemically bonded together.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'gravity-and-orbits',
+    title: 'Gravity and Orbits',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '6-9',
+    description: 'Investigate how gravity governs the motion of planets, moons, and satellites in orbit.',
+    sections: [
+      {
+        title: 'Prior Knowledge Questions',
+        questions: [
+          { question: 'What is gravity?', answer: 'Gravity is a force of attraction between objects with mass. The greater the mass, the stronger the gravitational pull.' },
+          { question: 'Who first described the law of universal gravitation?', answer: 'Sir Isaac Newton first described the law of universal gravitation in 1687.' },
+        ],
+      },
+      {
+        title: 'Activity A – Orbital Motion',
+        questions: [
+          { question: 'What keeps planets in orbit around the Sun?', answer: 'Gravity from the Sun pulls planets inward while their forward velocity keeps them moving in a curved path, resulting in a stable orbit.' },
+          { question: 'How does distance affect gravitational force?', answer: 'Gravitational force decreases as distance increases. If the distance doubles, the gravitational force decreases to one-quarter of its original strength.' },
+          { question: 'What is the difference between mass and weight?', answer: 'Mass is the amount of matter in an object (constant everywhere), while weight is the gravitational force acting on that mass (varies by location).' },
+        ],
+      },
+    ],
+  },
 ]
 
 export function getAllGizmos(): Gizmo[] {
