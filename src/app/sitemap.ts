@@ -3,7 +3,7 @@ import { getAllGizmos } from '@/lib/gizmos'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const gizmos = getAllGizmos()
-  const base = 'https://www.gizmosanswerkey.com'
+  const base = 'https://www.gizmosanswerkey.shop'
 
   const subjects = ['life-science', 'physical-science', 'earth-space', 'math', 'engineering']
 
