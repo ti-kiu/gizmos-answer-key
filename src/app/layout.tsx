@@ -41,7 +41,7 @@ export default function RootLayout({
         </header>
         <main>{children}</main>
         <footer className="border-t mt-16 py-8 text-center text-sm text-gray-500">
-          <p>© 2026 GizmosAnswerKey.com — Not affiliated with ExploreLearning</p>
+          <p>© 2026 GizmosAnswerKey.shop — Not affiliated with ExploreLearning</p>
         </footer>
       </body>
     </html>
