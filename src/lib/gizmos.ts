@@ -1407,6 +1407,615 @@ const gizmos: Gizmo[] = [
       },
     ],
   },
+  {
+    slug: 'periodic-table',
+    title: 'Periodic Table',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '7-10',
+    description: 'Learn how elements are organized in the periodic table and predict their properties.',
+    sections: [
+      {
+        title: 'Table Organization',
+        questions: [
+          { question: 'How are elements arranged in the periodic table?', answer: 'By increasing atomic number (number of protons). Elements in the same column have similar properties.' },
+          { question: 'What\'s a period?', answer: 'A horizontal row. Elements in the same period have the same number of electron shells.' },
+          { question: 'What\'s a group or family?', answer: 'A vertical column. Elements in the same group have similar chemical properties because they have the same number of valence electrons.' },
+        ],
+      },
+      {
+        title: 'Element Properties',
+        questions: [
+          { question: 'Where are metals located?', answer: 'Left side and center of the table. They\'re shiny, conduct electricity, and are malleable.' },
+          { question: 'Where are nonmetals?', answer: 'Right side of the table. They\'re dull, poor conductors, and brittle when solid.' },
+          { question: 'What are the noble gases?', answer: 'Group 18 - helium, neon, argon, etc. They\'re very unreactive because they have full outer electron shells.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'meiosis',
+    title: 'Meiosis',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '9-11',
+    description: 'Compare meiosis and mitosis and understand how sex cells are produced.',
+    sections: [
+      {
+        title: 'Meiosis Basics',
+        questions: [
+          { question: 'What\'s the purpose of meiosis?', answer: 'To produce sex cells (gametes) - sperm and egg cells - for sexual reproduction.' },
+          { question: 'How many divisions happen in meiosis?', answer: 'Two divisions: meiosis I and meiosis II.' },
+          { question: 'How many cells does meiosis produce?', answer: 'Four haploid cells (half the normal number of chromosomes).' },
+        ],
+      },
+      {
+        title: 'Meiosis vs Mitosis',
+        questions: [
+          { question: 'What\'s the main difference between meiosis and mitosis?', answer: 'Mitosis produces 2 identical diploid cells. Meiosis produces 4 genetically different haploid cells.' },
+          { question: 'Why is genetic variation important?', answer: 'It gives offspring different traits from parents, which helps species adapt and survive.' },
+          { question: 'What causes genetic variation in meiosis?', answer: 'Crossing over (chromosomes exchange DNA) and independent assortment (random distribution of chromosomes).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'integers',
+    title: 'Adding and Subtracting Integers',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '6-8',
+    description: 'Master the rules for adding and subtracting positive and negative numbers.',
+    sections: [
+      {
+        title: 'Integer Rules',
+        questions: [
+          { question: 'How do you add two positive numbers?', answer: 'Just add them normally. 5 + 3 = 8.' },
+          { question: 'How do you add two negative numbers?', answer: 'Add their absolute values and make the answer negative. -5 + (-3) = -8.' },
+          { question: 'How do you add a positive and negative number?', answer: 'Subtract the smaller absolute value from the larger, and use the sign of the larger. 5 + (-3) = 2, or -5 + 3 = -2.' },
+        ],
+      },
+      {
+        title: 'Subtraction Tricks',
+        questions: [
+          { question: 'What\'s the trick for subtracting integers?', answer: 'Change subtraction to adding the opposite. 5 - 3 becomes 5 + (-3).' },
+          { question: 'What\'s 7 - (-4)?', answer: 'Change to 7 + 4 = 11. Subtracting a negative is the same as adding a positive.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'human-immune-system',
+    title: 'Immune System',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '7-9',
+    description: 'Learn how the body defends itself against pathogens using the immune system.',
+    sections: [
+      {
+        title: 'Lines of Defense',
+        questions: [
+          { question: 'What\'s the first line of defense?', answer: 'Physical barriers like skin, mucus, and cilia that stop pathogens from entering the body.' },
+          { question: 'What\'s the second line of defense?', answer: 'Non-specific immune responses like fever, inflammation, and white blood cells that attack any invader.' },
+          { question: 'What\'s the third line of defense?', answer: 'The specific immune response - antibodies and memory cells that target specific pathogens.' },
+        ],
+      },
+      {
+        title: 'Antibodies and Vaccines',
+        questions: [
+          { question: 'What\'s an antibody?', answer: 'A protein made by B cells that binds to a specific antigen (foreign substance) to neutralize it.' },
+          { question: 'How do vaccines work?', answer: 'They expose your immune system to a weakened or dead pathogen, so your body makes memory cells without getting sick.' },
+          { question: 'What\'s an antigen?', answer: 'A molecule on the surface of a pathogen that triggers an immune response.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'tides',
+    title: 'Tides',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '6-8',
+    description: 'Understand what causes tides and why they change throughout the day and month.',
+    sections: [
+      {
+        title: 'What Causes Tides',
+        questions: [
+          { question: 'What causes ocean tides?', answer: 'The gravitational pull of the Moon (and to a lesser extent, the Sun) on Earth\'s oceans.' },
+          { question: 'Why are there usually two high tides per day?', answer: 'One on the side facing the Moon (pulled toward it) and one on the opposite side (inertia creates a bulge there too).' },
+          { question: 'What\'s a spring tide?', answer: 'Extra-high tides that happen during new and full moons when the Sun, Earth, and Moon are aligned.' },
+        ],
+      },
+      {
+        title: 'Tidal Patterns',
+        questions: [
+          { question: 'What\'s a neap tide?', answer: 'Weaker tides during quarter moons when the Sun and Moon pull at right angles to each other.' },
+          { question: 'How long is a tidal cycle?', answer: 'About 12 hours 25 minutes between high tides, so the cycle shifts about 50 minutes later each day.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'photosynthesis-and-respiration',
+    title: 'Photosynthesis and Respiration',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '7-9',
+    description: 'Compare photosynthesis and cellular respiration and see how they are opposite processes.',
+    sections: [
+      {
+        title: 'The Two Processes',
+        questions: [
+          { question: 'What\'s the equation for cellular respiration?', answer: 'C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy (ATP).' },
+          { question: 'How are photosynthesis and respiration opposite?', answer: 'Photosynthesis uses CO₂ and water to make glucose and oxygen. Respiration uses glucose and oxygen to make CO₂ and water.' },
+          { question: 'Where does cellular respiration happen?', answer: 'In the mitochondria of all living cells.' },
+        ],
+      },
+      {
+        title: 'Energy Flow',
+        questions: [
+          { question: 'What is ATP?', answer: 'Adenosine triphosphate - the energy currency of cells. It stores and releases energy for cellular work.' },
+          { question: 'Do plants do cellular respiration?', answer: 'Yes! Plants do both photosynthesis and cellular respiration. They photosynthesize during the day and respire all the time.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'geometry-angles',
+    title: 'Angles and Triangles',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '6-8',
+    description: 'Classify angles and triangles and use angle relationships to solve problems.',
+    sections: [
+      {
+        title: 'Types of Angles',
+        questions: [
+          { question: 'What\'s an acute angle?', answer: 'Less than 90°.' },
+          { question: 'What\'s an obtuse angle?', answer: 'Between 90° and 180°.' },
+          { question: 'What are complementary angles?', answer: 'Two angles that add up to 90°.' },
+          { question: 'What are supplementary angles?', answer: 'Two angles that add up to 180°.' },
+        ],
+      },
+      {
+        title: 'Triangles',
+        questions: [
+          { question: 'What do the angles of any triangle add up to?', answer: '180°.' },
+          { question: 'What\'s an equilateral triangle?', answer: 'All three sides equal, all three angles are 60°.' },
+          { question: 'What\'s an isosceles triangle?', answer: 'Two equal sides and two equal base angles.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'nuclear-reactions',
+    title: 'Nuclear Reactions',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '10-12',
+    description: 'Compare fission and fusion reactions and understand radioactive decay.',
+    sections: [
+      {
+        title: 'Radioactive Decay',
+        questions: [
+          { question: 'What is radioactive decay?', answer: 'When an unstable nucleus loses energy by emitting radiation (alpha, beta, or gamma).' },
+          { question: 'What\'s half-life?', answer: 'The time it takes for half of a radioactive sample to decay. Each element has a fixed half-life.' },
+          { question: 'If a sample has a half-life of 10 years, how much is left after 30 years?', answer: '3 half-lives: 1/2 → 1/4 → 1/8. So 12.5% remains.' },
+        ],
+      },
+      {
+        title: 'Fission vs Fusion',
+        questions: [
+          { question: 'What\'s nuclear fission?', answer: 'Splitting a heavy nucleus (like uranium) into smaller ones, releasing huge amounts of energy. Used in nuclear power plants.' },
+          { question: 'What\'s nuclear fusion?', answer: 'Combining two light nuclei (like hydrogen) into a heavier one, releasing even more energy. Powers the Sun.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'ocean-currents',
+    title: 'Ocean Currents',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '6-9',
+    description: 'Discover what drives surface and deep ocean currents and how they affect climate.',
+    sections: [
+      {
+        title: 'Surface Currents',
+        questions: [
+          { question: 'What drives surface ocean currents?', answer: 'Wind patterns. The trade winds and westerlies push water in predictable circular patterns called gyres.' },
+          { question: 'How do ocean currents affect climate?', answer: 'Warm currents (like the Gulf Stream) carry heat to cooler regions, making nearby land warmer. Cold currents cool coastal areas.' },
+          { question: 'What\'s the Coriolis effect?', answer: 'Earth\'s rotation deflects moving air and water to the right in the Northern Hemisphere and left in the Southern Hemisphere.' },
+        ],
+      },
+      {
+        title: 'Deep Ocean Circulation',
+        questions: [
+          { question: 'What drives deep ocean currents?', answer: 'Differences in water density caused by temperature and salinity (thermohaline circulation).' },
+          { question: 'Why is cold salty water denser?', answer: 'Cold water molecules are closer together, and dissolved salt adds mass. Denser water sinks.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'speed-velocity-acceleration',
+    title: 'Speed, Velocity, and Acceleration',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '6-8',
+    description: 'Calculate speed, velocity, and acceleration and interpret motion graphs.',
+    sections: [
+      {
+        title: 'Definitions',
+        questions: [
+          { question: 'What\'s the difference between speed and velocity?', answer: 'Speed is how fast (scalar). Velocity is speed plus direction (vector). 60 mph is speed; 60 mph north is velocity.' },
+          { question: 'What\'s the formula for speed?', answer: 'Speed = distance ÷ time.' },
+          { question: 'What\'s acceleration?', answer: 'The rate of change of velocity. Acceleration = (final velocity - initial velocity) ÷ time.' },
+        ],
+      },
+      {
+        title: 'Motion Graphs',
+        questions: [
+          { question: 'On a distance-time graph, what does a straight line mean?', answer: 'Constant speed - the object is moving at a steady rate.' },
+          { question: 'On a distance-time graph, what does a flat line mean?', answer: 'The object is not moving (at rest).' },
+          { question: 'On a velocity-time graph, what does the slope represent?', answer: 'Acceleration - a steeper slope means faster acceleration.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'evolution-natural-selection',
+    title: 'Evolution by Natural Selection',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '8-10',
+    description: 'Understand the mechanisms of evolution and how species change over time.',
+    sections: [
+      {
+        title: 'Darwin\'s Theory',
+        questions: [
+          { question: 'What are the four main ideas of natural selection?', answer: '1) Variation exists, 2) More offspring than can survive, 3) Competition for resources, 4) Individuals with favorable traits survive and reproduce more.' },
+          { question: 'What\'s an adaptation?', answer: 'A trait that helps an organism survive and reproduce in its environment.' },
+          { question: 'What\'s fitness in evolutionary terms?', answer: 'How well an organism can survive and reproduce in its environment (not physical strength).' },
+        ],
+      },
+      {
+        title: 'Evidence for Evolution',
+        questions: [
+          { question: 'What are fossils?', answer: 'Preserved remains or traces of ancient organisms that show how species have changed over time.' },
+          { question: 'What are homologous structures?', answer: 'Body parts in different species that have similar structure but different functions, suggesting common ancestry (like human arm and whale flipper).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'volume-of-solids',
+    title: 'Volume of 3D Shapes',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '6-8',
+    description: 'Calculate the volume of prisms, cylinders, pyramids, cones, and spheres.',
+    sections: [
+      {
+        title: 'Prisms and Cylinders',
+        questions: [
+          { question: 'How do you find the volume of a rectangular prism?', answer: 'Length × width × height. If it\'s 5 × 3 × 4 cm, volume = 60 cm³.' },
+          { question: 'What\'s the formula for cylinder volume?', answer: 'V = πr²h (area of circular base × height).' },
+        ],
+      },
+      {
+        title: 'Pyramids, Cones, and Spheres',
+        questions: [
+          { question: 'What\'s the formula for pyramid volume?', answer: 'V = (1/3) × base area × height. It\'s 1/3 of a prism with the same base and height.' },
+          { question: 'What\'s the formula for cone volume?', answer: 'V = (1/3)πr²h. It\'s 1/3 of a cylinder.' },
+          { question: 'What\'s the formula for sphere volume?', answer: 'V = (4/3)πr³.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'heat-transfer',
+    title: 'Heat Transfer',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '6-8',
+    description: 'Learn the three methods of heat transfer: conduction, convection, and radiation.',
+    sections: [
+      {
+        title: 'Three Methods',
+        questions: [
+          { question: 'What is conduction?', answer: 'Heat transfer through direct contact. Molecules vibrate and pass energy to neighbors (like a metal spoon getting hot in soup).' },
+          { question: 'What is convection?', answer: 'Heat transfer through the movement of fluids (liquids or gases). Warm fluid rises, cool fluid sinks, creating a current.' },
+          { question: 'What is radiation?', answer: 'Heat transfer through electromagnetic waves (no medium needed). The Sun heats Earth through radiation across empty space.' },
+        ],
+      },
+      {
+        title: 'Real-World Examples',
+        questions: [
+          { question: 'Which materials are good conductors?', answer: 'Metals like copper and aluminum conduct heat well.' },
+          { question: 'Which materials are good insulators?', answer: 'Air, wood, plastic, and foam resist heat flow.' },
+          { question: 'Why does hot air rise?', answer: 'Hot air is less dense than cold air, so it floats upward (convection).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'fossils-and-geologic-time',
+    title: 'Fossils and Geologic Time',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '7-9',
+    description: 'Use fossils to understand Earth\'s history and the geologic time scale.',
+    sections: [
+      {
+        title: 'Fossil Formation',
+        questions: [
+          { question: 'How do fossils form?', answer: 'An organism dies and gets buried quickly in sediment. Over time, minerals replace the organic material, creating a fossil.' },
+          { question: 'What are index fossils?', answer: 'Fossils of organisms that lived for a short time but were widespread. They help date rock layers.' },
+          { question: 'What\'s relative dating?', answer: 'Determining which rock layers are older or younger based on their position (older layers are usually deeper).' },
+        ],
+      },
+      {
+        title: 'Geologic Time Scale',
+        questions: [
+          { question: 'What are the major divisions of geologic time?', answer: 'Eons → Eras → Periods → Epochs (from largest to smallest).' },
+          { question: 'What era are we in now?', answer: 'The Cenozoic Era (the "Age of Mammals").' },
+          { question: 'When did dinosaurs live?', answer: 'The Mesozoic Era (Triassic, Jurassic, and Cretaceous periods).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'graphing-linear-equations',
+    title: 'Graphing Linear Equations',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '7-9',
+    description: 'Graph linear equations using slope-intercept form, point-slope form, and tables.',
+    sections: [
+      {
+        title: 'Slope-Intercept Form',
+        questions: [
+          { question: 'What\'s slope-intercept form?', answer: 'y = mx + b, where m is slope and b is y-intercept.' },
+          { question: 'How do you graph y = 2x + 3?', answer: 'Start at y-intercept (0, 3). Use slope 2 (rise 2, run 1) to find more points.' },
+        ],
+      },
+      {
+        title: 'Other Forms',
+        questions: [
+          { question: 'What\'s standard form?', answer: 'Ax + By = C. Example: 3x + 2y = 6.' },
+          { question: 'How do you find x and y intercepts?', answer: 'For x-intercept, set y = 0 and solve. For y-intercept, set x = 0 and solve.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'diffusion-and-osmosis',
+    title: 'Diffusion and Osmosis',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '7-9',
+    description: 'Understand how molecules move across cell membranes through diffusion and osmosis.',
+    sections: [
+      {
+        title: 'Passive Transport',
+        questions: [
+          { question: 'What is diffusion?', answer: 'The movement of molecules from high concentration to low concentration until evenly distributed (no energy required).' },
+          { question: 'What is osmosis?', answer: 'The diffusion of water across a selectively permeable membrane.' },
+          { question: 'What\'s a selectively permeable membrane?', answer: 'A membrane that lets some substances through but not others (like the cell membrane).' },
+        ],
+      },
+      {
+        title: 'Solutions and Cells',
+        questions: [
+          { question: 'What happens to a cell in a hypotonic solution?', answer: 'Water moves into the cell, causing it to swell (and possibly burst).' },
+          { question: 'What happens to a cell in a hypertonic solution?', answer: 'Water moves out of the cell, causing it to shrink.' },
+          { question: 'What\'s an isotonic solution?', answer: 'Equal concentration inside and outside the cell - no net water movement.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'minerals',
+    title: 'Mineral Identification',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '6-8',
+    description: 'Identify minerals using physical properties like hardness, luster, and streak.',
+    sections: [
+      {
+        title: 'Mineral Properties',
+        questions: [
+          { question: 'What is a mineral?', answer: 'A naturally occurring, inorganic solid with a definite chemical composition and crystal structure.' },
+          { question: 'What\'s hardness?', answer: 'A mineral\'s resistance to scratching, measured on the Mohs scale (1-10, with diamond at 10).' },
+          { question: 'What\'s luster?', answer: 'How a mineral reflects light - metallic (shiny like metal) or non-metallic (glassy, pearly, dull, etc.).' },
+        ],
+      },
+      {
+        title: 'Testing Minerals',
+        questions: [
+          { question: 'What\'s streak?', answer: 'The color of a mineral\'s powder when rubbed on a porcelain plate. Often different from the mineral\'s surface color.' },
+          { question: 'What\'s cleavage?', answer: 'The tendency of a mineral to break along smooth, flat surfaces.' },
+          { question: 'What\'s fracture?', answer: 'When a mineral breaks with rough or irregular surfaces (no cleavage).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'inequalities',
+    title: 'Solving and Graphing Inequalities',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '7-9',
+    description: 'Solve one-variable inequalities and graph solutions on number lines.',
+    sections: [
+      {
+        title: 'Solving Inequalities',
+        questions: [
+          { question: 'How is solving inequalities like solving equations?', answer: 'You use the same steps - add, subtract, multiply, divide to isolate the variable.' },
+          { question: 'What\'s the special rule for inequalities?', answer: 'When you multiply or divide by a negative number, flip the inequality sign. Example: -2x > 6 becomes x < -3.' },
+        ],
+      },
+      {
+        title: 'Graphing Solutions',
+        questions: [
+          { question: 'How do you graph x > 3?', answer: 'Open circle at 3, arrow pointing right (all numbers greater than 3).' },
+          { question: 'How do you graph x ≤ -2?', answer: 'Closed circle at -2, arrow pointing left (includes -2 and everything less).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'energy-pyramid',
+    title: 'Energy Pyramid',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '6-8',
+    description: 'Understand how energy flows through trophic levels in an ecosystem.',
+    sections: [
+      {
+        title: 'Trophic Levels',
+        questions: [
+          { question: 'What are the trophic levels in order?', answer: 'Producers (plants) → Primary consumers (herbivores) → Secondary consumers (carnivores) → Tertiary consumers (top predators).' },
+          { question: 'Why is an energy pyramid shaped like a pyramid?', answer: 'Each level has less energy than the one below. Only about 10% of energy transfers to the next level.' },
+          { question: 'Where does the lost energy go?', answer: 'Most is lost as heat through metabolism, movement, and life processes.' },
+        ],
+      },
+      {
+        title: 'Biomass',
+        questions: [
+          { question: 'What is biomass?', answer: 'The total mass of living organisms at each trophic level.' },
+          { question: 'Why are there fewer top predators?', answer: 'Less energy is available at higher levels, so the ecosystem can only support fewer large predators.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'seasons',
+    title: 'Seasons and Earth\'s Tilt',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '6-8',
+    description: 'Learn why Earth has seasons and how sunlight intensity changes throughout the year.',
+    sections: [
+      {
+        title: 'Why We Have Seasons',
+        questions: [
+          { question: 'What causes seasons?', answer: 'Earth\'s 23.5° tilt as it orbits the Sun. Different parts of Earth receive more direct sunlight at different times of year.' },
+          { question: 'Is Earth closer to the Sun in summer?', answer: 'No! Distance doesn\'t cause seasons. It\'s all about the tilt and angle of sunlight.' },
+          { question: 'When is the Northern Hemisphere tilted toward the Sun?', answer: 'During summer (around June 21, the summer solstice).' },
+        ],
+      },
+      {
+        title: 'Solstices and Equinoxes',
+        questions: [
+          { question: 'What\'s a solstice?', answer: 'When one hemisphere is tilted most toward or away from the Sun (longest or shortest day of the year).' },
+          { question: 'What\'s an equinox?', answer: 'When neither hemisphere is tilted toward the Sun - day and night are equal length (around March 21 and September 21).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'atomic-structure',
+    title: 'Atomic Structure',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '7-9',
+    description: 'Build atoms and understand how protons, neutrons, and electrons determine element identity.',
+    sections: [
+      {
+        title: 'Subatomic Particles',
+        questions: [
+          { question: 'Where are electrons located?', answer: 'In electron shells (energy levels) surrounding the nucleus.' },
+          { question: 'What determines an element\'s identity?', answer: 'The number of protons (atomic number). Carbon always has 6 protons.' },
+          { question: 'What are isotopes?', answer: 'Atoms of the same element with different numbers of neutrons. Example: Carbon-12 and Carbon-14.' },
+        ],
+      },
+      {
+        title: 'Electron Configuration',
+        questions: [
+          { question: 'How many electrons fit in the first shell?', answer: '2 electrons.' },
+          { question: 'How many electrons fit in the second shell?', answer: '8 electrons.' },
+          { question: 'What are valence electrons?', answer: 'Electrons in the outermost shell. They determine how an atom bonds with others.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'order-of-operations',
+    title: 'Order of Operations',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '5-7',
+    description: 'Use PEMDAS to evaluate expressions with multiple operations.',
+    sections: [
+      {
+        title: 'PEMDAS',
+        questions: [
+          { question: 'What does PEMDAS stand for?', answer: 'Parentheses, Exponents, Multiplication/Division (left to right), Addition/Subtraction (left to right).' },
+          { question: 'Solve: 3 + 4 × 2', answer: '3 + 8 = 11. Multiply before adding.' },
+          { question: 'Solve: (3 + 4) × 2', answer: '7 × 2 = 14. Parentheses first.' },
+        ],
+      },
+      {
+        title: 'Common Mistakes',
+        questions: [
+          { question: 'Solve: 20 ÷ 4 × 5', answer: '5 × 5 = 25. Division and multiplication have equal priority, so work left to right.' },
+          { question: 'Solve: 10 - 3 + 2', answer: '7 + 2 = 9. Addition and subtraction have equal priority, work left to right.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'bonding-basics',
+    title: 'Chemical Bonding',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '8-10',
+    description: 'Compare ionic and covalent bonds and predict how atoms will bond.',
+    sections: [
+      {
+        title: 'Types of Bonds',
+        questions: [
+          { question: 'What\'s an ionic bond?', answer: 'A bond formed when one atom transfers electrons to another, creating oppositely charged ions that attract (like Na⁺ and Cl⁻ in salt).' },
+          { question: 'What\'s a covalent bond?', answer: 'A bond formed when atoms share electrons (like H₂O - water).' },
+          { question: 'Which elements form ionic bonds?', answer: 'Metals and nonmetals. Metals lose electrons, nonmetals gain them.' },
+        ],
+      },
+      {
+        title: 'Predicting Bonds',
+        questions: [
+          { question: 'Which elements form covalent bonds?', answer: 'Nonmetals with nonmetals. They share electrons to fill their outer shells.' },
+          { question: 'What\'s the octet rule?', answer: 'Atoms tend to gain, lose, or share electrons to have 8 valence electrons (a full outer shell).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'human-evolution',
+    title: 'Human Evolution',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '9-11',
+    description: 'Trace the evolution of humans from early primates to modern Homo sapiens.',
+    sections: [
+      {
+        title: 'Human Ancestors',
+        questions: [
+          { question: 'What are hominids?', answer: 'The group that includes humans and our extinct ancestors who walked upright.' },
+          { question: 'What was Australopithecus?', answer: 'An early hominid that lived 4-2 million years ago, walked upright, but had a small brain (like Lucy).' },
+          { question: 'What was Homo habilis?', answer: 'The first species in our genus Homo, lived 2.4-1.4 million years ago, used simple stone tools.' },
+        ],
+      },
+      {
+        title: 'Modern Humans',
+        questions: [
+          { question: 'When did Homo sapiens appear?', answer: 'About 300,000 years ago in Africa.' },
+          { question: 'What makes humans unique?', answer: 'Large brains, complex language, advanced tool use, art, and culture.' },
+        ],
+      },
+    ],
+  },
 ]
 
 export function getAllGizmos(): Gizmo[] {
