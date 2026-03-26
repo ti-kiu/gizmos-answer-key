@@ -9,7 +9,30 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage() {
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Gizmos Answer Key',
+    url: 'https://www.gizmosanswerkey.com',
+    description: 'Free answers and AI explanations for every ExploreLearning Gizmo student exploration sheet.',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://www.gizmosanswerkey.com/search?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  }
+
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOrganization',
+    name: 'Gizmos Answer Key',
+    url: 'https://www.gizmosanswerkey.com',
+    logo: 'https://www.gizmosanswerkey.com/logo.png',
+    description: 'Free educational resource providing answer keys for ExploreLearning Gizmos.',
+  }
+
   return (
+    <>
     <div>
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-16 px-4">
@@ -59,5 +82,10 @@ export default function HomePage() {
         </div>
       </section>
     </div>
+
+    {/* Structured Data */}
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+    </>
   )
 }

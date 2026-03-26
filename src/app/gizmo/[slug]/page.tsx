@@ -53,6 +53,21 @@ export default function GizmoPage({ params }: { params: { slug: string } }) {
     ),
   }
 
+  const educationalSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name: `${gizmo.title} Answer Key`,
+    description: gizmo.description,
+    educationalLevel: gizmo.grade,
+    learningResourceType: 'Answer Key',
+    about: {
+      '@type': 'Thing',
+      name: gizmo.subject,
+    },
+    isAccessibleForFree: true,
+    inLanguage: 'en',
+  }
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
       {/* Breadcrumb */}
@@ -83,6 +98,7 @@ export default function GizmoPage({ params }: { params: { slug: string } }) {
       {/* Structured Data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(educationalSchema) }} />
     </div>
   )
 }

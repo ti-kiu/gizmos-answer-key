@@ -778,6 +778,635 @@ const gizmos: Gizmo[] = [
       },
     ],
   },
+  {
+    slug: 'balancing-chemical-equations',
+    title: 'Balancing Chemical Equations',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '8-10',
+    description: 'Learn to balance chemical equations by adjusting coefficients to satisfy the law of conservation of mass.',
+    sections: [
+      {
+        title: 'Getting Started',
+        questions: [
+          { question: 'Why do we need to balance chemical equations?', answer: 'Because atoms can\'t be created or destroyed in a reaction - whatever goes in must come out.' },
+          { question: 'What\'s a coefficient in a chemical equation?', answer: 'The number in front of a chemical formula that tells you how many molecules you have.' },
+          { question: 'Can you change subscripts to balance an equation?', answer: 'No! Changing subscripts changes the actual substance. You can only change coefficients.' },
+        ],
+      },
+      {
+        title: 'Practice Problems',
+        questions: [
+          { question: 'How do you know when an equation is balanced?', answer: 'When you have the same number of each type of atom on both sides of the arrow.' },
+          { question: 'What\'s a good strategy for balancing equations?', answer: 'Start with the most complex molecule, balance elements that appear in only one reactant and product first, save hydrogen and oxygen for last.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'quadratic-functions',
+    title: 'Quadratic Functions',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '9-11',
+    description: 'Graph parabolas and find key features like vertex, axis of symmetry, and roots of quadratic functions.',
+    sections: [
+      {
+        title: 'Understanding Parabolas',
+        questions: [
+          { question: 'What does a quadratic function look like?', answer: 'It\'s written as y = ax² + bx + c and its graph is a U-shaped curve called a parabola.' },
+          { question: 'How do you know if a parabola opens up or down?', answer: 'If a is positive, it opens up. If a is negative, it opens down.' },
+          { question: 'What\'s the vertex of a parabola?', answer: 'The highest or lowest point on the parabola - the turning point.' },
+        ],
+      },
+      {
+        title: 'Finding Key Features',
+        questions: [
+          { question: 'What\'s the axis of symmetry?', answer: 'A vertical line through the vertex that divides the parabola into two mirror images. Formula: x = -b/(2a).' },
+          { question: 'What are the roots or zeros of a quadratic?', answer: 'The x-values where the parabola crosses the x-axis (where y = 0).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'heredity',
+    title: 'Inheritance and Punnett Squares',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '7-9',
+    description: 'Use Punnett squares to predict how traits are passed from parents to offspring.',
+    sections: [
+      {
+        title: 'Basic Genetics',
+        questions: [
+          { question: 'What\'s the difference between genotype and phenotype?', answer: 'Genotype is the genetic code (like Bb), phenotype is what you actually see (like brown eyes).' },
+          { question: 'What does homozygous mean?', answer: 'Having two identical alleles for a trait (BB or bb).' },
+          { question: 'What does heterozygous mean?', answer: 'Having two different alleles for a trait (Bb).' },
+        ],
+      },
+      {
+        title: 'Using Punnett Squares',
+        questions: [
+          { question: 'If both parents are Bb, what\'s the chance their kid is bb?', answer: '25% or 1/4. The Punnett square shows BB, Bb, Bb, bb.' },
+          { question: 'What\'s a dominant allele?', answer: 'An allele that shows up in the phenotype even if there\'s only one copy (represented by capital letter).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'sound-waves',
+    title: 'Sound Waves and Hearing',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '6-8',
+    description: 'Learn how sound travels as waves and how our ears detect different pitches and volumes.',
+    sections: [
+      {
+        title: 'How Sound Works',
+        questions: [
+          { question: 'What type of wave is sound?', answer: 'A longitudinal wave - particles vibrate back and forth in the same direction the wave travels.' },
+          { question: 'Can sound travel through space?', answer: 'No, sound needs a medium (like air, water, or solid) to travel. Space is a vacuum.' },
+          { question: 'What makes a sound loud or quiet?', answer: 'Amplitude - bigger vibrations make louder sounds.' },
+        ],
+      },
+      {
+        title: 'Pitch and Frequency',
+        questions: [
+          { question: 'What makes a sound high-pitched or low-pitched?', answer: 'Frequency - high frequency = high pitch, low frequency = low pitch.' },
+          { question: 'Does sound travel faster in air or water?', answer: 'Water. Sound travels faster through denser materials because particles are closer together.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'fractions',
+    title: 'Adding and Subtracting Fractions',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '5-7',
+    description: 'Master adding and subtracting fractions with like and unlike denominators.',
+    sections: [
+      {
+        title: 'Like Denominators',
+        questions: [
+          { question: 'How do you add fractions with the same denominator?', answer: 'Just add the numerators and keep the denominator the same. Example: 2/5 + 1/5 = 3/5.' },
+          { question: 'What about subtracting fractions with the same denominator?', answer: 'Subtract the numerators and keep the denominator. Example: 4/7 - 2/7 = 2/7.' },
+        ],
+      },
+      {
+        title: 'Unlike Denominators',
+        questions: [
+          { question: 'What do you do when denominators are different?', answer: 'Find a common denominator (usually the least common multiple), convert both fractions, then add or subtract.' },
+          { question: 'Add 1/3 + 1/4. What do you get?', answer: 'Common denominator is 12. So 4/12 + 3/12 = 7/12.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'earthquakes',
+    title: 'Earthquakes and Seismic Waves',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '6-8',
+    description: 'Understand what causes earthquakes and how seismic waves help scientists study Earth\'s interior.',
+    sections: [
+      {
+        title: 'What Causes Earthquakes',
+        questions: [
+          { question: 'Why do earthquakes happen?', answer: 'Tectonic plates get stuck as they try to move past each other. When they finally slip, the sudden release of energy causes an earthquake.' },
+          { question: 'What\'s the focus of an earthquake?', answer: 'The point underground where the earthquake starts.' },
+          { question: 'What\'s the epicenter?', answer: 'The point on Earth\'s surface directly above the focus.' },
+        ],
+      },
+      {
+        title: 'Seismic Waves',
+        questions: [
+          { question: 'What are P-waves?', answer: 'Primary waves - the fastest seismic waves that can travel through solids, liquids, and gases.' },
+          { question: 'What are S-waves?', answer: 'Secondary waves - slower than P-waves and can only travel through solids.' },
+          { question: 'How do scientists use seismic waves?', answer: 'By studying how waves travel through Earth, they can figure out what\'s inside (like finding the liquid outer core because S-waves can\'t pass through it).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'human-digestive-system',
+    title: 'Digestive System',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '6-8',
+    description: 'Follow the path of food through the digestive system and learn how nutrients are absorbed.',
+    sections: [
+      {
+        title: 'The Digestive Journey',
+        questions: [
+          { question: 'Where does digestion start?', answer: 'In the mouth - saliva contains enzymes that start breaking down carbohydrates.' },
+          { question: 'What does the stomach do?', answer: 'It churns food and mixes it with acid and enzymes to break it down into a liquid called chyme.' },
+          { question: 'Where are most nutrients absorbed?', answer: 'In the small intestine - it has tiny finger-like projections called villi that absorb nutrients into the bloodstream.' },
+        ],
+      },
+      {
+        title: 'Organs and Functions',
+        questions: [
+          { question: 'What does the liver do in digestion?', answer: 'It produces bile, which helps break down fats.' },
+          { question: 'What\'s the job of the large intestine?', answer: 'It absorbs water from undigested food and forms solid waste.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'light-and-reflection',
+    title: 'Light and Reflection',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '6-8',
+    description: 'Study how light reflects off surfaces and how mirrors form images.',
+    sections: [
+      {
+        title: 'How Light Behaves',
+        questions: [
+          { question: 'What\'s the law of reflection?', answer: 'The angle of incidence equals the angle of reflection - light bounces off at the same angle it hits.' },
+          { question: 'What\'s the difference between regular and diffuse reflection?', answer: 'Regular reflection is off smooth surfaces (like mirrors) where light bounces in one direction. Diffuse reflection is off rough surfaces where light scatters.' },
+        ],
+      },
+      {
+        title: 'Mirrors and Images',
+        questions: [
+          { question: 'What kind of image does a flat mirror make?', answer: 'A virtual image - same size as the object, upright, and appears to be behind the mirror.' },
+          { question: 'What\'s a concave mirror?', answer: 'A mirror that curves inward - it can focus light and create magnified images.' },
+          { question: 'What\'s a convex mirror?', answer: 'A mirror that curves outward - it creates smaller, wider-angle images (used in car side mirrors).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'area-of-polygons',
+    title: 'Area of Polygons',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '6-8',
+    description: 'Calculate the area of triangles, rectangles, parallelograms, and other polygons.',
+    sections: [
+      {
+        title: 'Basic Shapes',
+        questions: [
+          { question: 'How do you find the area of a rectangle?', answer: 'Length × width. If it\'s 5 cm by 3 cm, area = 15 cm².' },
+          { question: 'What\'s the formula for triangle area?', answer: '½ × base × height. The height has to be perpendicular to the base.' },
+          { question: 'How do you find the area of a parallelogram?', answer: 'Base × height (same as rectangle, but height is the perpendicular distance between parallel sides).' },
+        ],
+      },
+      {
+        title: 'More Complex Shapes',
+        questions: [
+          { question: 'How do you find the area of a trapezoid?', answer: '½ × (base₁ + base₂) × height. Average the two parallel sides, then multiply by height.' },
+          { question: 'What if you have an irregular polygon?', answer: 'Break it into triangles and rectangles, find each area, then add them up.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'climate-change',
+    title: 'Carbon Cycle and Climate',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '7-10',
+    description: 'Learn how carbon moves through Earth\'s systems and how human activities affect climate.',
+    sections: [
+      {
+        title: 'The Carbon Cycle',
+        questions: [
+          { question: 'How does carbon move between the atmosphere and living things?', answer: 'Plants take in CO₂ during photosynthesis, animals eat plants and release CO₂ through respiration.' },
+          { question: 'What are carbon sinks?', answer: 'Places that store carbon for long periods - like oceans, forests, and fossil fuels underground.' },
+          { question: 'What releases carbon into the atmosphere?', answer: 'Burning fossil fuels, deforestation, volcanic eruptions, and cellular respiration.' },
+        ],
+      },
+      {
+        title: 'Climate Impact',
+        questions: [
+          { question: 'What\'s the greenhouse effect?', answer: 'Gases like CO₂ and methane trap heat in the atmosphere, keeping Earth warm enough for life.' },
+          { question: 'Why is too much CO₂ a problem?', answer: 'It strengthens the greenhouse effect, causing global temperatures to rise faster than ecosystems can adapt.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'protein-synthesis',
+    title: 'RNA and Protein Synthesis',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '9-11',
+    description: 'Follow the process of transcription and translation to see how DNA codes for proteins.',
+    sections: [
+      {
+        title: 'DNA to RNA',
+        questions: [
+          { question: 'What\'s transcription?', answer: 'The process where DNA is copied into messenger RNA (mRNA) in the nucleus.' },
+          { question: 'How is RNA different from DNA?', answer: 'RNA is single-stranded, has uracil (U) instead of thymine (T), and has ribose sugar instead of deoxyribose.' },
+          { question: 'What does mRNA do?', answer: 'It carries the genetic instructions from DNA in the nucleus to the ribosomes in the cytoplasm.' },
+        ],
+      },
+      {
+        title: 'Making Proteins',
+        questions: [
+          { question: 'What\'s translation?', answer: 'The process where ribosomes read mRNA and build proteins by linking amino acids together.' },
+          { question: 'What\'s a codon?', answer: 'A three-nucleotide sequence on mRNA that codes for one amino acid.' },
+          { question: 'What does tRNA do?', answer: 'Transfer RNA brings the correct amino acid to the ribosome based on the mRNA codon.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'acids-and-bases',
+    title: 'Acids, Bases, and pH',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '7-9',
+    description: 'Test the pH of different substances and learn what makes something acidic or basic.',
+    sections: [
+      {
+        title: 'Understanding pH',
+        questions: [
+          { question: 'What does pH measure?', answer: 'How acidic or basic a solution is, on a scale from 0 to 14.' },
+          { question: 'What pH is neutral?', answer: '7 - that\'s pure water.' },
+          { question: 'What pH range is acidic? Basic?', answer: 'Below 7 is acidic, above 7 is basic (alkaline).' },
+        ],
+      },
+      {
+        title: 'Properties and Examples',
+        questions: [
+          { question: 'What are some properties of acids?', answer: 'Sour taste, turn blue litmus paper red, react with metals to produce hydrogen gas. Examples: lemon juice, vinegar, stomach acid.' },
+          { question: 'What are some properties of bases?', answer: 'Bitter taste, slippery feel, turn red litmus paper blue. Examples: soap, baking soda, bleach.' },
+          { question: 'What happens when you mix an acid and a base?', answer: 'They neutralize each other, forming water and a salt.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'systems-of-equations',
+    title: 'Solving Systems of Equations',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '8-10',
+    description: 'Solve systems of linear equations using graphing, substitution, and elimination methods.',
+    sections: [
+      {
+        title: 'What\'s a System',
+        questions: [
+          { question: 'What\'s a system of equations?', answer: 'Two or more equations with the same variables. You\'re looking for values that make all equations true at the same time.' },
+          { question: 'What does the solution represent on a graph?', answer: 'The point where the lines intersect - the (x, y) coordinates that satisfy both equations.' },
+        ],
+      },
+      {
+        title: 'Solution Methods',
+        questions: [
+          { question: 'How does substitution work?', answer: 'Solve one equation for a variable, then plug that expression into the other equation.' },
+          { question: 'How does elimination work?', answer: 'Add or subtract the equations to eliminate one variable, solve for the other, then substitute back.' },
+          { question: 'What if the lines are parallel?', answer: 'No solution - the lines never intersect.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'animal-behavior',
+    title: 'Animal Behavior and Adaptations',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '6-8',
+    description: 'Study how animals behave and adapt to survive in their environments.',
+    sections: [
+      {
+        title: 'Types of Behavior',
+        questions: [
+          { question: 'What\'s the difference between innate and learned behavior?', answer: 'Innate behavior is instinctive (born knowing it), learned behavior comes from experience.' },
+          { question: 'Give an example of innate behavior.', answer: 'Baby sea turtles crawling to the ocean right after hatching, or birds building nests.' },
+          { question: 'Give an example of learned behavior.', answer: 'A dog learning to sit on command, or a bird learning its species\' song.' },
+        ],
+      },
+      {
+        title: 'Survival Adaptations',
+        questions: [
+          { question: 'What\'s camouflage?', answer: 'When an animal\'s coloring helps it blend into its surroundings to hide from predators or sneak up on prey.' },
+          { question: 'What\'s mimicry?', answer: 'When a harmless animal looks like a dangerous one to scare off predators (like a harmless snake with colors similar to a venomous one).' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'electricity-and-magnetism',
+    title: 'Electromagnetism',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '8-10',
+    description: 'Discover the connection between electricity and magnetism by building electromagnets.',
+    sections: [
+      {
+        title: 'Making Electromagnets',
+        questions: [
+          { question: 'What\'s an electromagnet?', answer: 'A magnet created by running electric current through a wire coiled around an iron core.' },
+          { question: 'How is an electromagnet different from a regular magnet?', answer: 'You can turn an electromagnet on and off by controlling the electric current. Regular magnets are always magnetic.' },
+          { question: 'How can you make an electromagnet stronger?', answer: 'Use more coils of wire, increase the current, or use a better iron core.' },
+        ],
+      },
+      {
+        title: 'Real-World Uses',
+        questions: [
+          { question: 'Where are electromagnets used?', answer: 'Electric motors, speakers, MRI machines, scrapyard cranes, doorbells, and hard drives.' },
+          { question: 'What did Oersted discover?', answer: 'That electric current creates a magnetic field - he noticed a compass needle moved when near a wire with current flowing through it.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'exponents',
+    title: 'Exponents and Powers',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '6-8',
+    description: 'Learn the rules of exponents and how to simplify expressions with powers.',
+    sections: [
+      {
+        title: 'Exponent Basics',
+        questions: [
+          { question: 'What does 5³ mean?', answer: '5 × 5 × 5 = 125. The exponent tells you how many times to multiply the base by itself.' },
+          { question: 'What\'s any number to the power of 0?', answer: '1. For example, 7⁰ = 1, 100⁰ = 1.' },
+          { question: 'What\'s a negative exponent mean?', answer: 'It means the reciprocal. 2⁻³ = 1/(2³) = 1/8.' },
+        ],
+      },
+      {
+        title: 'Exponent Rules',
+        questions: [
+          { question: 'How do you multiply powers with the same base?', answer: 'Add the exponents. x⁵ × x³ = x⁸.' },
+          { question: 'How do you divide powers with the same base?', answer: 'Subtract the exponents. x⁷ ÷ x² = x⁵.' },
+          { question: 'What about a power raised to another power?', answer: 'Multiply the exponents. (x²)³ = x⁶.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'weathering-and-erosion',
+    title: 'Weathering and Erosion',
+    subject: 'Earth & Space Science',
+    subject_slug: 'earth-space',
+    grade: '6-8',
+    description: 'See how rocks break down over time and how sediment is transported and deposited.',
+    sections: [
+      {
+        title: 'Breaking Down Rocks',
+        questions: [
+          { question: 'What\'s the difference between weathering and erosion?', answer: 'Weathering breaks rocks into smaller pieces. Erosion moves those pieces to new locations.' },
+          { question: 'What\'s mechanical weathering?', answer: 'Physical breakdown without changing the rock\'s composition - like ice wedging, plant roots, or temperature changes.' },
+          { question: 'What\'s chemical weathering?', answer: 'When the rock\'s minerals change through chemical reactions - like rust forming on iron or acid rain dissolving limestone.' },
+        ],
+      },
+      {
+        title: 'Moving Sediment',
+        questions: [
+          { question: 'What causes erosion?', answer: 'Water, wind, ice, and gravity move weathered rock and soil.' },
+          { question: 'What\'s deposition?', answer: 'When eroded sediment settles in a new place - like a river delta or sand dune.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'plant-cells',
+    title: 'Plant and Animal Cells',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '6-8',
+    description: 'Compare plant and animal cells and identify the function of different organelles.',
+    sections: [
+      {
+        title: 'Cell Structures',
+        questions: [
+          { question: 'What do both plant and animal cells have?', answer: 'Nucleus, cell membrane, cytoplasm, mitochondria, ribosomes, and endoplasmic reticulum.' },
+          { question: 'What do only plant cells have?', answer: 'Cell wall, chloroplasts, and a large central vacuole.' },
+          { question: 'What does the nucleus do?', answer: 'Controls cell activities and stores DNA (the cell\'s genetic information).' },
+        ],
+      },
+      {
+        title: 'Organelle Functions',
+        questions: [
+          { question: 'What do mitochondria do?', answer: 'Break down sugar to produce energy (ATP) - the powerhouse of the cell.' },
+          { question: 'What do chloroplasts do?', answer: 'Capture sunlight and make food through photosynthesis (only in plant cells).' },
+          { question: 'What does the cell membrane do?', answer: 'Controls what enters and leaves the cell.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'ratios-and-proportions',
+    title: 'Ratios and Proportions',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '6-8',
+    description: 'Use ratios to compare quantities and solve proportion problems.',
+    sections: [
+      {
+        title: 'Understanding Ratios',
+        questions: [
+          { question: 'What\'s a ratio?', answer: 'A comparison of two quantities. Can be written as 3:4, 3/4, or "3 to 4".' },
+          { question: 'If there are 12 boys and 15 girls, what\'s the ratio of boys to girls?', answer: '12:15, which simplifies to 4:5.' },
+        ],
+      },
+      {
+        title: 'Solving Proportions',
+        questions: [
+          { question: 'What\'s a proportion?', answer: 'An equation showing two ratios are equal, like 2/3 = 4/6.' },
+          { question: 'How do you solve a proportion with a missing value?', answer: 'Cross multiply. If 3/4 = x/12, then 3 × 12 = 4 × x, so x = 9.' },
+          { question: 'If 5 apples cost $2, how much do 15 apples cost?', answer: 'Set up proportion: 5/2 = 15/x. Cross multiply: 5x = 30, so x = $6.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'nervous-system',
+    title: 'Nervous System',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '7-9',
+    description: 'Learn how the brain, spinal cord, and nerves work together to control the body.',
+    sections: [
+      {
+        title: 'Structure of the Nervous System',
+        questions: [
+          { question: 'What are the two main parts of the nervous system?', answer: 'The central nervous system (CNS - brain and spinal cord) and the peripheral nervous system (all other nerves).' },
+          { question: 'What\'s a neuron?', answer: 'A nerve cell that sends electrical signals through the body.' },
+          { question: 'What are the three parts of a neuron?', answer: 'Dendrites (receive signals), cell body (processes signals), and axon (sends signals out).' },
+        ],
+      },
+      {
+        title: 'How Signals Travel',
+        questions: [
+          { question: 'What\'s a synapse?', answer: 'The tiny gap between two neurons where signals jump from one cell to the next using chemicals called neurotransmitters.' },
+          { question: 'What\'s a reflex?', answer: 'An automatic response to a stimulus that happens without thinking - the signal goes to the spinal cord and back before your brain even processes it.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'statistics',
+    title: 'Mean, Median, Mode, and Range',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '5-7',
+    description: 'Calculate and interpret measures of central tendency and spread in data sets.',
+    sections: [
+      {
+        title: 'Measures of Center',
+        questions: [
+          { question: 'How do you find the mean?', answer: 'Add all values, then divide by the number of values.' },
+          { question: 'How do you find the median?', answer: 'Sort the numbers from smallest to largest. If there\'s an odd count, the middle number is the median. If even, average the two middle numbers.' },
+          { question: 'What\'s the mode?', answer: 'The value that appears most often. A data set can have more than one mode.' },
+        ],
+      },
+      {
+        title: 'Understanding the Data',
+        questions: [
+          { question: 'What\'s the range?', answer: 'The difference between the maximum and minimum values. Shows how spread out the data is.' },
+          { question: 'When is the median a better measure of center than the mean?', answer: 'When there are outliers (extremely high or low values) that would skew the mean.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'refraction-and-lenses',
+    title: 'Refraction and Lenses',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '7-9',
+    description: 'See how light bends when it passes through different materials and how lenses focus light.',
+    sections: [
+      {
+        title: 'Refraction',
+        questions: [
+          { question: 'What is refraction?', answer: 'The bending of light when it passes from one material into another (like from air into glass).' },
+          { question: 'Why does light bend?', answer: 'It changes speed when it enters a different medium - light slows down in denser materials.' },
+          { question: 'What\'s a real-life example of refraction?', answer: 'A straw looking bent in a glass of water, or a rainbow forming when sunlight passes through raindrops.' },
+        ],
+      },
+      {
+        title: 'Types of Lenses',
+        questions: [
+          { question: 'What does a convex (converging) lens do?', answer: 'Bends light inward to a focal point - used in magnifying glasses and camera lenses.' },
+          { question: 'What does a concave (diverging) lens do?', answer: 'Spreads light outward - used in glasses for nearsighted people.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'biomes',
+    title: 'World Biomes',
+    subject: 'Life Science',
+    subject_slug: 'life-science',
+    grade: '6-8',
+    description: 'Compare the major biomes of the world and the organisms adapted to live in each one.',
+    sections: [
+      {
+        title: 'Types of Biomes',
+        questions: [
+          { question: 'What defines a biome?', answer: 'A large region with a characteristic climate, soil type, and community of plants and animals.' },
+          { question: 'What\'s the difference between a tropical rainforest and a temperate forest?', answer: 'Tropical rainforests are near the equator with high heat and rainfall year-round. Temperate forests have seasons and less rainfall.' },
+          { question: 'What characterizes a desert biome?', answer: 'Very little precipitation (less than 25 cm/year) and extreme temperature swings.' },
+        ],
+      },
+      {
+        title: 'Adaptations',
+        questions: [
+          { question: 'How do cacti survive in the desert?', answer: 'They store water in their thick stems, have waxy coatings to reduce evaporation, and have spines instead of leaves.' },
+          { question: 'How do animals in the tundra stay warm?', answer: 'They have thick fur or feathers, a layer of fat (blubber), and dark skin to absorb more heat.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'stoichiometry',
+    title: 'Stoichiometry',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '10-12',
+    description: 'Use mole ratios from balanced equations to calculate quantities of reactants and products.',
+    sections: [
+      {
+        title: 'The Mole',
+        questions: [
+          { question: 'What is a mole in chemistry?', answer: '6.022 × 10²³ particles (Avogadro\'s number). Like a "dozen" but for atoms and molecules.' },
+          { question: 'What\'s molar mass?', answer: 'The mass of one mole of a substance, in g/mol. Equal to the atomic or molecular mass from the periodic table.' },
+          { question: 'How many grams is one mole of water (H₂O)?', answer: '18 g/mol. Hydrogen is 2×1 = 2, oxygen is 16, total = 18.' },
+        ],
+      },
+      {
+        title: 'Stoichiometry Calculations',
+        questions: [
+          { question: 'What\'s a mole ratio?', answer: 'The ratio of moles of any two substances in a balanced equation, used to convert between amounts.' },
+          { question: 'What\'s a limiting reactant?', answer: 'The reactant that runs out first and stops the reaction. It determines how much product you can make.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'decimals-and-percents',
+    title: 'Decimals, Fractions, and Percents',
+    subject: 'Math',
+    subject_slug: 'math',
+    grade: '5-7',
+    description: 'Convert between decimals, fractions, and percents and use them to solve real-world problems.',
+    sections: [
+      {
+        title: 'Conversions',
+        questions: [
+          { question: 'How do you convert a fraction to a decimal?', answer: 'Divide the numerator by the denominator. 3/4 = 3 ÷ 4 = 0.75.' },
+          { question: 'How do you convert a decimal to a percent?', answer: 'Multiply by 100 (or move the decimal point two places to the right). 0.85 = 85%.' },
+          { question: 'Convert 35% to a fraction.', answer: '35/100, which simplifies to 7/20.' },
+        ],
+      },
+      {
+        title: 'Using Percents',
+        questions: [
+          { question: 'What is 20% of 50?', answer: '50 × 0.20 = 10.' },
+          { question: 'A shirt costs $40 and is 25% off. How much do you pay?', answer: 'Discount = 40 × 0.25 = $10. You pay $40 - $10 = $30.' },
+        ],
+      },
+    ],
+  },
 ]
 
 export function getAllGizmos(): Gizmo[] {
