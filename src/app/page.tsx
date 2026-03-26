@@ -6,6 +6,7 @@ import { hotGizmos } from '@/data/gizmos'
 export const metadata: Metadata = {
   title: 'Gizmos Answer Key - Free Student Exploration Answers',
   description: 'Find free answer keys for all ExploreLearning Gizmos. AI-powered explanations for every question.',
+  alternates: { canonical: 'https://www.gizmosanswerkey.shop' },
 }
 
 export default function HomePage() {
