@@ -33,7 +33,6 @@ export default function HomePage() {
   }
 
   return (
-    <>
     <div>
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-16 px-4">
@@ -82,11 +81,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </div>
 
-    {/* Structured Data */}
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-    </>
+      {/* Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+    </div>
   )
 }
