@@ -5,10 +5,8 @@ let supabaseClient: ReturnType<typeof createClient> | null = null
 export function getSupabaseClient() {
   if (supabaseClient) return supabaseClient
 
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
-  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-
-  if (!url || !key) return null
+  const url = 'https://tuqaeyebzocghfkyjirz.supabase.co'
+  const key = 'sb_publishable_blzES9JruCT-vTrxlRSjyg_3T19G-MO'
 
   supabaseClient = createClient(url, key)
   return supabaseClient

@@ -55,7 +55,7 @@ export default function PayPalCheckout({ plan }: { plan: 'monthly' | 'annual' })
     )
   }
 
-  const clientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || ''
+  const clientId = 'AadK8lXmCMefljaos7lNRfv1v-XSIAlgAqM7pTICfHE3TKr76U00zztGNyX05WiITejJWnaBWE9yl7_R'
 
   return (
     <PayPalScriptProvider options={{ clientId, currency: 'USD' }}>
