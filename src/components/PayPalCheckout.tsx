@@ -1,7 +1,7 @@
 'use client'
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js'
 import { useState } from 'react'
-import { createClient } from '@supabase/supabase-js'
+import { getSupabaseClient } from '@/lib/supabase'
 
 export default function PayPalCheckout({ plan }: { plan: 'monthly' | 'annual' }) {
   const [success, setSuccess] = useState(false)
@@ -19,10 +19,12 @@ export default function PayPalCheckout({ plan }: { plan: 'monthly' | 'annual' })
   }
 
   const onApprove = async (data: { orderID: string }) => {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-    )
+    const supabase = getSupabaseClient()
+    if (!supabase) {
+      setError('Service unavailable. Please try again later.')
+      return
+    }
+
     const { data: { user } } = await supabase.auth.getUser()
 
     if (!user?.id) {
@@ -53,8 +55,10 @@ export default function PayPalCheckout({ plan }: { plan: 'monthly' | 'annual' })
     )
   }
 
+  const clientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || ''
+
   return (
-    <PayPalScriptProvider options={{ clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID!, currency: 'USD' }}>
+    <PayPalScriptProvider options={{ clientId, currency: 'USD' }}>
       {error && <p className="text-red-500 text-sm mb-3">{error}</p>}
       <PayPalButtons
         style={{ layout: 'vertical', shape: 'rect', label: 'pay' }}

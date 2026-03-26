@@ -1,8 +1,10 @@
 'use client'
-import { supabase } from '@/lib/supabase'
+import { getSupabaseClient } from '@/lib/supabase'
 
 export default function GoogleLoginButton() {
   const handleLogin = async () => {
+    const supabase = getSupabaseClient()
+    if (!supabase) return
     await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {

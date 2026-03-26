@@ -1,16 +1,14 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { createClient } from '@supabase/supabase-js'
+import { getSupabaseClient } from '@/lib/supabase'
 
 export default function AuthButton() {
   const [user, setUser] = useState<any>(null)
 
   useEffect(() => {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-    )
+    const supabase = getSupabaseClient()
+    if (!supabase) return
 
     supabase.auth.getUser().then(({ data }) => {
       setUser(data.user)
@@ -24,10 +22,8 @@ export default function AuthButton() {
   }, [])
 
   const handleSignOut = async () => {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-    )
+    const supabase = getSupabaseClient()
+    if (!supabase) return
     await supabase.auth.signOut()
     setUser(null)
   }

@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { createClient } from '@supabase/supabase-js'
+import { getSupabaseClient } from '@/lib/supabase'
 import AiExplainButton from './AiExplainButton'
 import AiChatBox from './AiChatBox'
 import GizmoCard from './GizmoCard'
@@ -13,10 +13,12 @@ export default function GizmoAnswers({ gizmo, related }: { gizmo: Gizmo; related
   useEffect(() => {
     const check = async () => {
       try {
-        const supabase = createClient(
-          process.env.NEXT_PUBLIC_SUPABASE_URL!,
-          process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-        )
+        const supabase = getSupabaseClient()
+        if (!supabase) {
+          setLoading(false)
+          return
+        }
+
         const { data: { user } } = await supabase.auth.getUser()
         if (!user) { setLoading(false); return }
 
