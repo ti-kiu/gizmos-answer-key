@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { getGizmoBySlug, getAllGizmos, getRelatedGizmos } from '@/lib/gizmos'
 import GizmoAnswers from '@/components/GizmoAnswers'
 
-const BASE = 'https://www.gizmosanswerkey.com'
+const BASE = 'https://www.gizmosanswerkey.shop'
 
 export async function generateStaticParams() {
   return getAllGizmos().map((g) => ({ slug: g.slug }))

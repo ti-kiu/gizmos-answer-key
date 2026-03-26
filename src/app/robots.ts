@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/auth/'],
     },
-    sitemap: 'https://www.gizmosanswerkey.com/sitemap.xml',
+    sitemap: 'https://www.gizmosanswerkey.shop/sitemap.xml',
   }
 }

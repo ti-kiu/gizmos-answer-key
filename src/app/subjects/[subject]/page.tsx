@@ -11,7 +11,7 @@ const SUBJECTS: Record<string, string> = {
   'engineering': 'Engineering',
 }
 
-const BASE = 'https://www.gizmosanswerkey.com'
+const BASE = 'https://www.gizmosanswerkey.shop'
 
 export async function generateStaticParams() {
   return Object.keys(SUBJECTS).map(s => ({ subject: s }))

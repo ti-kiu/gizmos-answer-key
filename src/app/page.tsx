@@ -13,11 +13,11 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Gizmos Answer Key',
-    url: 'https://www.gizmosanswerkey.com',
+    url: 'https://www.gizmosanswerkey.shop',
     description: 'Free answers and AI explanations for every ExploreLearning Gizmo student exploration sheet.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://www.gizmosanswerkey.com/search?q={search_term_string}',
+      target: 'https://www.gizmosanswerkey.shop/search?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   }
@@ -26,8 +26,8 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'EducationalOrganization',
     name: 'Gizmos Answer Key',
-    url: 'https://www.gizmosanswerkey.com',
-    logo: 'https://www.gizmosanswerkey.com/logo.png',
+    url: 'https://www.gizmosanswerkey.shop',
+    logo: 'https://www.gizmosanswerkey.shop/logo.png',
     description: 'Free educational resource providing answer keys for ExploreLearning Gizmos.',
   }
 
