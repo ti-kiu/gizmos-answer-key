@@ -8,31 +8,29 @@ import type { Gizmo } from '@/lib/gizmos'
 
 export default function GizmoAnswers({ gizmo, related }: { gizmo: Gizmo; related: Gizmo[] }) {
   const [isPro, setIsPro] = useState(false)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false) // 改为 false，直接显示内容
 
-  useEffect(() => {
-    const check = async () => {
-      try {
-        const supabase = getSupabaseClient()
-        if (!supabase) {
-          setLoading(false)
-          return
-        }
-
-        const { data: { user } } = await supabase.auth.getUser()
-        if (!user) { setLoading(false); return }
-
-        const res = await fetch(`/api/subscription?userId=${user.id}`)
-        const data = await res.json()
-        setIsPro(data.active === true)
-      } catch {
-        // fail open — treat as free
-      } finally {
-        setLoading(false)
-      }
-    }
-    check()
-  }, [])
+  // 暂时禁用 Supabase 检查
+  // useEffect(() => {
+  //   const check = async () => {
+  //     try {
+  //       const supabase = getSupabaseClient()
+  //       if (!supabase) {
+  //         setLoading(false)
+  //         return
+  //       }
+  //       const { data: { user } } = await supabase.auth.getUser()
+  //       if (!user) { setLoading(false); return }
+  //       const res = await fetch(`/api/subscription?userId=${user.id}`)
+  //       const data = await res.json()
+  //       setIsPro(data.active === true)
+  //     } catch {
+  //     } finally {
+  //       setLoading(false)
+  //     }
+  //   }
+  //   check()
+  // }, [])
 
   let globalIndex = 0
 
