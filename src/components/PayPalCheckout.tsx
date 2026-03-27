@@ -35,10 +35,31 @@ export default function PayPalCheckout({ plan }: { plan: 'monthly' | 'annual' })
       return
     }
 
-    const { data: { user } } = await supabase.auth.getUser()
+    // Try refreshing session first, then get user
+    await supabase.auth.refreshSession().catch(() => {})
+    const { data: userData } = await supabase.auth.getUser()
+    const user = userData?.user
 
     if (!user?.id) {
-      setError('Please sign in first to complete your purchase.')
+      // Fallback: try getSession
+      const { data: sessionData } = await supabase.auth.getSession()
+      const sessionUser = sessionData?.session?.user
+      if (!sessionUser?.id) {
+        setError('Please sign in first to complete your purchase.')
+        return
+      }
+      // Use session user
+      const res = await fetch('/api/paypal/capture-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ orderId: data.orderID, userId: sessionUser.id }),
+      })
+      const result = await res.json()
+      if (result.success) {
+        setSuccess(true)
+      } else {
+        setError('Payment captured but failed to activate. Please contact support.')
+      }
       return
     }
 
