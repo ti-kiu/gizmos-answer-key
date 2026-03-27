@@ -1,7 +1,6 @@
 'use client'
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js'
 import { useState } from 'react'
-import { getSupabaseClient } from '@/lib/supabase'
 
 export default function PayPalCheckout({ plan }: { plan: 'monthly' | 'annual' }) {
   const [success, setSuccess] = useState(false)
@@ -29,44 +28,18 @@ export default function PayPalCheckout({ plan }: { plan: 'monthly' | 'annual' })
   }
 
   const onApprove = async (data: { orderID: string }) => {
-    const supabase = getSupabaseClient()
-    if (!supabase) {
-      setError('Service unavailable. Please try again later.')
-      return
-    }
+    // Get userId from localStorage (set by AuthButton on login)
+    const userId = localStorage.getItem('gak_user_id')
 
-    // Try refreshing session first, then get user
-    await supabase.auth.refreshSession().catch(() => {})
-    const { data: userData } = await supabase.auth.getUser()
-    const user = userData?.user
-
-    if (!user?.id) {
-      // Fallback: try getSession
-      const { data: sessionData } = await supabase.auth.getSession()
-      const sessionUser = sessionData?.session?.user
-      if (!sessionUser?.id) {
-        setError('Please sign in first to complete your purchase.')
-        return
-      }
-      // Use session user
-      const res = await fetch('/api/paypal/capture-order', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ orderId: data.orderID, userId: sessionUser.id }),
-      })
-      const result = await res.json()
-      if (result.success) {
-        setSuccess(true)
-      } else {
-        setError('Payment captured but failed to activate. Please contact support.')
-      }
+    if (!userId) {
+      setError('Please sign in first to complete your purchase.')
       return
     }
 
     const res = await fetch('/api/paypal/capture-order', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ orderId: data.orderID, userId: user.id }),
+      body: JSON.stringify({ orderId: data.orderID, userId }),
     })
     const result = await res.json()
     if (result.success) {

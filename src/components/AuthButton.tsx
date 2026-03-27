@@ -12,10 +12,18 @@ export default function AuthButton() {
 
     supabase.auth.getUser().then(({ data }: any) => {
       setUser(data.user)
+      if (data.user?.id) {
+        localStorage.setItem('gak_user_id', data.user.id)
+      }
     })
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event: any, session: any) => {
       setUser(session?.user ?? null)
+      if (session?.user?.id) {
+        localStorage.setItem('gak_user_id', session.user.id)
+      } else {
+        localStorage.removeItem('gak_user_id')
+      }
     })
 
     return () => subscription.unsubscribe()
