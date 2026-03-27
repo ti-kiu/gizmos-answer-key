@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@paypal/react-paypal-js": "^9.0.2",
-    "@supabase/supabase-js": "^2.100.0",
+    "@supabase/supabase-js": "^2.39.8",
     "clsx": "^2.1.1",
     "next": "^14.2.5",
     "react": "^18",
