@@ -8,14 +8,24 @@ export default function PayPalCheckout({ plan }: { plan: 'monthly' | 'annual' })
   const [error, setError] = useState('')
 
   const createOrder = async () => {
-    const res = await fetch('/api/paypal/create-order', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ plan }),
-    })
-    const data = await res.json()
-    if (!data.id) throw new Error('Failed to create order')
-    return data.id
+    try {
+      const res = await fetch('/api/paypal/create-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ plan }),
+      })
+      const data = await res.json()
+      console.log('Create order response:', data)
+      if (!data.id) {
+        setError(`Failed to create order: ${data.error || 'Unknown error'}`)
+        throw new Error('Failed to create order')
+      }
+      return data.id
+    } catch (err) {
+      console.error('Create order error:', err)
+      setError('Failed to create PayPal order. Please try again.')
+      throw err
+    }
   }
 
   const onApprove = async (data: { orderID: string }) => {
