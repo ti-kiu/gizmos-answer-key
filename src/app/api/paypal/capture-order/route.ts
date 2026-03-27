@@ -42,7 +42,7 @@ export async function POST(request: Request) {
       paypal_order_id: orderId,
       status: 'active',
       expires_at: expiresAt.toISOString(),
-    })
+    }, { onConflict: 'user_id' })
 
     if (error) {
       console.error('Supabase upsert error:', error)
