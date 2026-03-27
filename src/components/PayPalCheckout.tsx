@@ -45,7 +45,7 @@ export default function PayPalCheckout({ plan }: { plan: 'monthly' | 'annual' })
     if (result.success) {
       setSuccess(true)
     } else {
-      setError('Payment captured but failed to activate. Please contact support.')
+      setError(`Payment captured but failed to activate: ${result.detail || result.error || 'Unknown error'}`)
     }
   }
 
