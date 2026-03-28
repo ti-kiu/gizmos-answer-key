@@ -47,6 +47,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Homework Helper Banner */}
+      <section className="max-w-6xl mx-auto px-4 pt-10 pb-2">
+        <a
+          href="/homework"
+          className="flex items-center justify-between bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-2xl px-8 py-5 hover:from-blue-700 hover:to-blue-600 transition-all shadow-md"
+        >
+          <div>
+            <p className="font-bold text-lg">📷 Homework Helper</p>
+            <p className="text-blue-100 text-sm mt-0.5">
+              Upload a worksheet photo or paste multiple questions — AI answers everything at once
+            </p>
+          </div>
+          <span className="text-2xl ml-4">→</span>
+        </a>
+      </section>
+
       {/* Popular Gizmos */}
       <section className="max-w-6xl mx-auto px-4 py-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Popular Gizmos</h2>
