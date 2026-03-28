@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { getAllGizmos } from '@/lib/gizmos'
 import GizmoCard from '@/components/GizmoCard'
+import { getSupabaseClient } from '@/lib/supabase'
 
 export default function SearchClient() {
   const router = useRouter()
@@ -13,6 +14,29 @@ export default function SearchClient() {
   const [aiAnswer, setAiAnswer] = useState('')
   const [aiLoading, setAiLoading] = useState(false)
   const [aiError, setAiError] = useState('')
+
+  const [isPro, setIsPro] = useState(false)
+  const [authLoading, setAuthLoading] = useState(true)
+
+  // Check subscription status
+  useEffect(() => {
+    const checkSub = async () => {
+      try {
+        const supabase = getSupabaseClient()
+        if (!supabase) { setAuthLoading(false); return }
+        const { data: { user } } = await supabase.auth.getUser()
+        if (!user) { setAuthLoading(false); return }
+        const res = await fetch(`/api/subscription?userId=${user.id}`)
+        const data = await res.json()
+        setIsPro(data.active === true)
+      } catch {
+        // fail open — treat as free
+      } finally {
+        setAuthLoading(false)
+      }
+    }
+    checkSub()
+  }, [])
 
   const all = getAllGizmos()
   const q = query.toLowerCase().trim()
@@ -58,6 +82,13 @@ export default function SearchClient() {
 
   const showAiFallback = q && results.length === 0
 
+  // Preview: show roughly first 30 words for free users
+  const getPreview = (text: string) => {
+    const words = text.split(' ')
+    if (words.length <= 30) return text
+    return words.slice(0, 30).join(' ') + '...'
+  }
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
       <form onSubmit={handleSearch} className="mb-8">
@@ -93,6 +124,9 @@ export default function SearchClient() {
           <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">AI Answer</span>
+              {isPro && (
+                <span className="text-xs text-green-700 bg-green-100 px-2 py-0.5 rounded-full">✅ Full Access</span>
+              )}
             </div>
 
             {aiLoading && (
@@ -110,7 +144,33 @@ export default function SearchClient() {
             )}
 
             {aiAnswer && !aiLoading && (
-              <p className="text-gray-800 leading-relaxed">{aiAnswer}</p>
+              <>
+                {isPro ? (
+                  // Pro: full answer
+                  <p className="text-gray-800 leading-relaxed">{aiAnswer}</p>
+                ) : authLoading ? (
+                  // Still checking subscription
+                  <div className="h-4 bg-gray-200 rounded animate-pulse w-3/4" />
+                ) : (
+                  // Free: preview + lock
+                  <div>
+                    <p className="text-gray-800 leading-relaxed">
+                      {getPreview(aiAnswer)}
+                    </p>
+                    <div className="mt-4 bg-white border border-dashed border-blue-200 rounded-lg p-4 text-center">
+                      <p className="text-gray-500 text-sm mb-3">
+                        🔒 Get the full answer with a Pro subscription
+                      </p>
+                      <a
+                        href="/pricing"
+                        className="bg-blue-600 text-white text-sm px-5 py-2 rounded-lg hover:bg-blue-700 inline-block"
+                      >
+                        Get Full Access — $4.99/mo
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </>
             )}
           </div>
         </div>
