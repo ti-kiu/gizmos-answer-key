@@ -51,15 +51,28 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 pt-10 pb-2">
         <a
           href="/homework"
-          className="flex items-center justify-between bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-2xl px-8 py-5 hover:from-blue-700 hover:to-blue-600 transition-all shadow-md"
+          className="group relative flex items-center justify-between bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-300 rounded-2xl px-8 py-6 hover:scale-[1.01] transition-all shadow-lg overflow-hidden"
         >
-          <div>
-            <p className="font-bold text-lg">📷 Homework Helper</p>
-            <p className="text-blue-100 text-sm mt-0.5">
-              Upload a worksheet photo or paste multiple questions — AI answers everything at once
-            </p>
+          {/* Background glow */}
+          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-5 transition-opacity" />
+
+          <div className="flex items-center gap-4">
+            <span className="text-4xl">📸</span>
+            <div>
+              <div className="flex items-center gap-2 mb-0.5">
+                <p className="font-extrabold text-gray-900 text-xl">Snap & Solve</p>
+                <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">New</span>
+              </div>
+              <p className="text-gray-700 text-sm">
+                📷 Photo your worksheet <span className="mx-1 text-gray-400">·</span> 📝 Paste all your questions — <strong>get every answer instantly</strong>
+              </p>
+            </div>
           </div>
-          <span className="text-2xl ml-4">→</span>
+
+          <div className="flex items-center gap-1 text-gray-800 font-bold text-lg shrink-0 ml-4">
+            Try it free
+            <span className="group-hover:translate-x-1 transition-transform inline-block ml-1">→</span>
+          </div>
         </a>
       </section>
 
