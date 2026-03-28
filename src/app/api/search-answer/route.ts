@@ -12,16 +12,16 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'AI service not configured' }, { status: 500 })
   }
 
-  const prompt = `A student asked this question: "${question}"
+  const prompt = `A student asked: "${question}"
 
-Answer it clearly and naturally. Rules:
-- Give the direct answer first
-- Explain why in 2-4 sentences
-- Use simple language for middle/high school students
-- Sound like a knowledgeable peer, not a textbook
-- No bullet points or headers, just natural paragraphs
-- If it's a multiple choice question, state the correct option and explain
-- Keep it under 100 words`
+Reply in this exact JSON format (no markdown, no extra text):
+{
+  "free": "One sentence with just the direct answer, no explanation.",
+  "full": "2-4 sentences. Start with the answer, then explain why in simple terms a middle/high school student would understand. Sound natural, not like a textbook."
+}
+
+Rules for "free": one sentence, state the answer only.
+Rules for "full": start with the same answer, then explain the reasoning. Natural tone, specific if possible. Under 80 words.`
 
   try {
     const res = await fetch('https://api.deepseek.com/chat/completions', {
@@ -34,7 +34,8 @@ Answer it clearly and naturally. Rules:
         model: 'deepseek-chat',
         messages: [{ role: 'user', content: prompt }],
         max_tokens: 300,
-        temperature: 0.5,
+        temperature: 0.4,
+        response_format: { type: 'json_object' },
       }),
     })
 
@@ -45,9 +46,20 @@ Answer it clearly and naturally. Rules:
     }
 
     const data = await res.json()
-    const answer = data.choices?.[0]?.message?.content ?? 'No answer available.'
+    const raw = data.choices?.[0]?.message?.content ?? '{}'
 
-    return NextResponse.json({ answer })
+    let parsed: { free?: string; full?: string } = {}
+    try {
+      parsed = JSON.parse(raw)
+    } catch {
+      // fallback: treat whole response as full answer
+      parsed = { free: raw.slice(0, 100) + '...', full: raw }
+    }
+
+    return NextResponse.json({
+      free: parsed.free ?? '',
+      full: parsed.full ?? '',
+    })
   } catch (e) {
     console.error('Search answer API error:', e)
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })

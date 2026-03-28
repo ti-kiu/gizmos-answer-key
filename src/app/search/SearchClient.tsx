@@ -11,7 +11,8 @@ export default function SearchClient() {
   const initialQuery = searchParams.get('q') || ''
   const [query, setQuery] = useState(initialQuery)
 
-  const [aiAnswer, setAiAnswer] = useState('')
+  const [freeAnswer, setFreeAnswer] = useState('')
+  const [fullAnswer, setFullAnswer] = useState('')
   const [aiLoading, setAiLoading] = useState(false)
   const [aiError, setAiError] = useState('')
 
@@ -53,16 +54,18 @@ export default function SearchClient() {
     router.push(`/search?q=${encodeURIComponent(query)}`)
   }
 
-  // When there are no results and we have a query, auto-fetch AI answer
+  // When no Gizmo results, fetch AI answer
   useEffect(() => {
     const currentQ = searchParams.get('q') || ''
     if (!currentQ.trim() || results.length > 0) {
-      setAiAnswer('')
+      setFreeAnswer('')
+      setFullAnswer('')
       setAiError('')
       return
     }
 
-    setAiAnswer('')
+    setFreeAnswer('')
+    setFullAnswer('')
     setAiError('')
     setAiLoading(true)
 
@@ -73,21 +76,18 @@ export default function SearchClient() {
     })
       .then(r => r.json())
       .then(data => {
-        if (data.answer) setAiAnswer(data.answer)
-        else setAiError('Could not generate an answer. Please try again.')
+        if (data.free || data.full) {
+          setFreeAnswer(data.free ?? '')
+          setFullAnswer(data.full ?? '')
+        } else {
+          setAiError('Could not generate an answer. Please try again.')
+        }
       })
       .catch(() => setAiError('Something went wrong. Please try again.'))
       .finally(() => setAiLoading(false))
   }, [searchParams])
 
   const showAiFallback = q && results.length === 0
-
-  // Preview: show roughly first 30 words for free users
-  const getPreview = (text: string) => {
-    const words = text.split(' ')
-    if (words.length <= 30) return text
-    return words.slice(0, 30).join(' ') + '...'
-  }
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
@@ -114,65 +114,68 @@ export default function SearchClient() {
         </div>
       )}
 
-      {/* AI Fallback when no Gizmo found */}
+      {/* AI Fallback */}
       {showAiFallback && (
         <div className="max-w-2xl mx-auto">
           <p className="text-gray-500 mb-6">
             No Gizmo found for &quot;{query}&quot; — here&apos;s an AI-generated answer:
           </p>
 
-          <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">AI Answer</span>
-              {isPro && (
-                <span className="text-xs text-green-700 bg-green-100 px-2 py-0.5 rounded-full">✅ Full Access</span>
-              )}
+          {aiLoading && (
+            <div className="flex items-center gap-2 text-gray-500 mb-4">
+              <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+              </svg>
+              Generating answer...
             </div>
+          )}
 
-            {aiLoading && (
-              <div className="flex items-center gap-2 text-gray-500">
-                <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
-                </svg>
-                Generating answer...
+          {aiError && <p className="text-red-500 text-sm">{aiError}</p>}
+
+          {!aiLoading && freeAnswer && (
+            <div className="space-y-4">
+
+              {/* Answer 1 — always free */}
+              <div className="bg-white border rounded-xl p-5 shadow-sm">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-blue-600 font-bold">Q1.</span>
+                  <span className="text-xs text-green-700 bg-green-100 px-2 py-0.5 rounded-full">Free</span>
+                </div>
+                <p className="text-gray-800 leading-relaxed">{freeAnswer}</p>
               </div>
-            )}
 
-            {aiError && (
-              <p className="text-red-500 text-sm">{aiError}</p>
-            )}
+              {/* Answer 2 — pro only */}
+              <div className="bg-white border rounded-xl p-5 shadow-sm">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-blue-600 font-bold">Q2.</span>
+                  {isPro
+                    ? <span className="text-xs text-green-700 bg-green-100 px-2 py-0.5 rounded-full">✅ Full Access</span>
+                    : <span className="text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full">🔒 Pro</span>
+                  }
+                </div>
 
-            {aiAnswer && !aiLoading && (
-              <>
-                {isPro ? (
-                  // Pro: full answer
-                  <p className="text-gray-800 leading-relaxed">{aiAnswer}</p>
-                ) : authLoading ? (
-                  // Still checking subscription
+                {authLoading ? (
                   <div className="h-4 bg-gray-200 rounded animate-pulse w-3/4" />
+                ) : isPro ? (
+                  <p className="text-gray-800 leading-relaxed">{fullAnswer}</p>
                 ) : (
-                  // Free: preview + lock
-                  <div>
-                    <p className="text-gray-800 leading-relaxed">
-                      {getPreview(aiAnswer)}
+                  <div className="text-center py-2">
+                    <p className="text-gray-500 text-sm mb-3">
+                      🔒 Full explanation available with Pro
                     </p>
-                    <div className="mt-4 bg-white border border-dashed border-blue-200 rounded-lg p-4 text-center">
-                      <p className="text-gray-500 text-sm mb-3">
-                        🔒 Get the full answer with a Pro subscription
-                      </p>
-                      <a
-                        href="/pricing"
-                        className="bg-blue-600 text-white text-sm px-5 py-2 rounded-lg hover:bg-blue-700 inline-block"
-                      >
-                        Get Full Access — $4.99/mo
-                      </a>
-                    </div>
+                    <a
+                      href="/pricing"
+                      className="bg-blue-600 text-white text-sm px-5 py-2 rounded-lg hover:bg-blue-700 inline-block"
+                    >
+                      Get Full Access — $4.99/mo
+                    </a>
                   </div>
                 )}
-              </>
-            )}
-          </div>
+              </div>
+
+            </div>
+          )}
         </div>
       )}
     </div>
