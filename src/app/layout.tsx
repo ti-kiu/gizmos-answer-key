@@ -7,14 +7,16 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: 'Gizmos Answer Key - Free Student Exploration Answers',
+    default: '✅ Free Gizmos Answer Key - All Student Exploration Sheets',
     template: '%s | Gizmos Answer Key',
   },
-  description: 'Find free answer keys for ExploreLearning Gizmos. Step-by-step answers and AI explanations for all Gizmo student exploration sheets.',
-  keywords: ['gizmos answer key', 'explorelearning gizmos answers', 'student exploration answers'],
+  description: '🎓 Get instant free answers for 80+ ExploreLearning Gizmos. Complete answer keys with step-by-step explanations for all student exploration sheets.',
+  keywords: ['gizmos answer key', 'explorelearning gizmos answers', 'student exploration answers', 'free gizmo answers', 'gizmos homework help', 'gizmo answer sheet'],
   openGraph: {
     type: 'website',
     siteName: 'Gizmos Answer Key',
+    title: 'Free Gizmos Answer Key - All Student Exploration Sheets',
+    description: 'Get instant free answers for 80+ ExploreLearning Gizmos with step-by-step explanations.',
   },
 }
 

@@ -5,9 +5,10 @@ import GizmoCard from '@/components/GizmoCard'
 import { hotGizmos } from '@/data/gizmos'
 
 export const metadata: Metadata = {
-  title: 'Gizmos Answer Key - Free Student Exploration Answers',
-  description: 'Find free answer keys for all ExploreLearning Gizmos. AI-powered explanations for every question.',
+  title: '✅ Free Gizmos Answer Key - All Student Exploration Sheets (2026)',
+  description: '🎓 Get instant answers for 80+ ExploreLearning Gizmos. Free answer keys with step-by-step explanations. Life Science, Physical Science, Math & more.',
   alternates: { canonical: 'https://www.gizmosanswerkey.shop' },
+  keywords: ['gizmos answer key', 'explorelearning gizmos answers', 'student exploration sheet answers', 'free gizmo answers', 'gizmos homework help'],
 }
 
 export default function HomePage() {
