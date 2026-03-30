@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const gizmo = getGizmoBySlug(params.slug)
   if (!gizmo) return {}
   return {
-    title: `${gizmo.title} Answer Key`,
-    description: `Complete ${gizmo.title} Gizmo answer key with AI explanations. Free answers for all activities and assessment questions.`,
+    title: `${gizmo.title} Answer Key - Free Student Exploration Answers`,
+    description: `✅ Free ${gizmo.title} Gizmo answer key for ${gizmo.grade} grade. Complete answers with step-by-step explanations for all activities. Updated 2026.`,
     keywords: [
       `${gizmo.title} answer key`,
       `${gizmo.title} gizmo answers`,
@@ -87,6 +87,19 @@ export default function GizmoPage({ params }: { params: { slug: string } }) {
         </div>
         <h1 className="text-3xl font-bold text-gray-900 mb-3">{gizmo.title} Answer Key</h1>
         <p className="text-gray-600 mb-4">{gizmo.description}</p>
+        
+        {/* SEO Content */}
+        <div className="bg-blue-50 border border-blue-100 rounded-lg p-5 mb-4 text-sm text-gray-700 leading-relaxed">
+          <p className="mb-2">
+            <strong>Looking for {gizmo.title} answers?</strong> This complete answer key provides verified solutions 
+            for all student exploration activities and assessment questions in the ExploreLearning {gizmo.title} Gizmo.
+          </p>
+          <p>
+            ✅ <strong>100% Free</strong> • Step-by-step explanations • Perfect for homework help • 
+            Covers all activities • Updated for 2026
+          </p>
+        </div>
+
         <a href="#answers" className="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700">
           Jump to Answers ↓
         </a>
