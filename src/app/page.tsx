@@ -47,35 +47,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Homework Helper Banner */}
-      <section className="max-w-6xl mx-auto px-4 pt-10 pb-2">
-        <a
-          href="/homework"
-          className="group relative flex items-center justify-between bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-300 rounded-2xl px-8 py-6 hover:scale-[1.01] transition-all shadow-lg overflow-hidden"
-        >
-          {/* Background glow */}
-          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-5 transition-opacity" />
-
-          <div className="flex items-center gap-4">
-            <span className="text-4xl">📸</span>
-            <div>
-              <div className="flex items-center gap-2 mb-0.5">
-                <p className="font-extrabold text-gray-900 text-xl">Snap & Solve</p>
-                <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">New</span>
-              </div>
-              <p className="text-gray-700 text-sm">
-                📷 Photo your worksheet <span className="mx-1 text-gray-400">·</span> 📝 Paste all your questions — <strong>get every answer instantly</strong>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-1 text-gray-800 font-bold text-lg shrink-0 ml-4">
-            Try it free
-            <span className="group-hover:translate-x-1 transition-transform inline-block ml-1">→</span>
-          </div>
-        </a>
-      </section>
-
       {/* Popular Gizmos */}
       <section className="max-w-6xl mx-auto px-4 py-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Popular Gizmos</h2>
