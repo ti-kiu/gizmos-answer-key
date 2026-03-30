@@ -30,6 +30,7 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
             <a href="/" className="font-bold text-xl text-blue-600">GizmosAnswerKey</a>
             <nav className="hidden md:flex gap-6 text-sm text-gray-600">
+              <a href="/homework" className="hover:text-blue-600 font-medium">📸 Homework Helper</a>
               <a href="/subjects/life-science" className="hover:text-blue-600">Life Science</a>
               <a href="/subjects/physical-science" className="hover:text-blue-600">Physical Science</a>
               <a href="/subjects/math" className="hover:text-blue-600">Math</a>
