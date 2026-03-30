@@ -29,7 +29,8 @@ export default function HomeworkClient() {
     checkSub()
   }, [])
 
-  const handleTextSubmit = async () => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
     if (!questions.trim()) return
     setLoading(true)
     setResult('')
@@ -62,21 +63,28 @@ export default function HomeworkClient() {
   }
 
   return (
-    <div>
-      <textarea
-        value={questions}
-        onChange={e => setQuestions(e.target.value)}
-        placeholder={`Paste your questions here, one per line. Example:\n\n1. What is the powerhouse of the cell?\n2. Which planet is closest to the sun?\n3. What is 2 + 2?`}
-        rows={10}
-        className="w-full border rounded-xl p-4 text-gray-800 resize-none focus:outline-none focus:ring-2 focus:ring-blue-300"
-      />
-      <button
-        onClick={handleTextSubmit}
-        disabled={loading || !questions.trim()}
-        className="mt-3 w-full bg-blue-600 text-white py-3 rounded-xl font-medium hover:bg-blue-700 disabled:opacity-50 transition-colors"
-      >
-        {loading ? 'Generating answers...' : 'Get All Answers'}
-      </button>
+    <div className="max-w-2xl mx-auto">
+      <form onSubmit={handleSubmit}>
+        <div className="border border-gray-300 rounded-xl focus-within:ring-2 focus-within:ring-blue-500 overflow-hidden bg-white shadow-sm">
+          <textarea
+            value={questions}
+            onChange={e => setQuestions(e.target.value)}
+            placeholder={"Paste your homework questions here...\n\nExample:\n1. What is the powerhouse of the cell?\n2. Which planet is closest to the sun?"}
+            rows={8}
+            className="w-full px-4 pt-4 pb-2 text-base text-gray-800 resize-none focus:outline-none"
+          />
+          <div className="flex items-center justify-between px-3 pb-3 pt-1 border-t border-gray-100">
+            <span className="text-xs text-gray-400">Paste one or more questions — AI will answer all of them</span>
+            <button
+              type="submit"
+              disabled={loading || !questions.trim()}
+              className="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 disabled:opacity-40 transition-colors"
+            >
+              {loading ? 'Answering...' : 'Get Answers'}
+            </button>
+          </div>
+        </div>
+      </form>
 
       {error && <p className="text-red-500 text-sm mt-4">{error}</p>}
 
