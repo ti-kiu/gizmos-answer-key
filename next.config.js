@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/homework',
+        destination: '/?mode=homework',
+        permanent: false,
+      },
+    ]
+  },
   images: {
     unoptimized: true,
   },

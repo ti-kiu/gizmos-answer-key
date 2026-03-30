@@ -1,11 +1,12 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { getSupabaseClient } from '@/lib/supabase'
 
 interface Result { slug: string; title: string; subject: string; grade: string }
 
 export default function SearchBox() {
+  const searchParams = useSearchParams()
   const [mode, setMode] = useState<'search' | 'homework'>('search')
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<Result[]>([])
@@ -16,6 +17,10 @@ export default function SearchBox() {
   const timer = useRef<NodeJS.Timeout>()
   const ref = useRef<HTMLDivElement>(null)
   const router = useRouter()
+
+  useEffect(() => {
+    if (searchParams.get('mode') === 'homework') setMode('homework')
+  }, [searchParams])
 
   useEffect(() => {
     const checkSub = async () => {
