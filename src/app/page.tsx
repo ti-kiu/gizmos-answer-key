@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { Suspense } from 'react'
 import SearchBox from '@/components/SearchBox'
 import GizmoCard from '@/components/GizmoCard'
 import { hotGizmos } from '@/data/gizmos'
@@ -43,7 +44,9 @@ export default function HomePage() {
           <p className="text-lg text-gray-600 mb-8">
             Free answers and AI explanations for every ExploreLearning Gizmo student exploration sheet.
           </p>
-          <SearchBox />
+          <Suspense fallback={null}>
+            <SearchBox />
+          </Suspense>
         </div>
       </section>
 
