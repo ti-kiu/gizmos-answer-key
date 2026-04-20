@@ -363,5 +363,161 @@ Gizmos 的设计就是让你动手做实验、动脑筋思考。你跳过这些�
 *网站地址：gizmosanswerkey.shop  
 完全免费，无需注册  
 但请记得：先做，再查*`
+  },
+  {
+    id: 'cell-division-gizmo-answer-key',
+    title: 'Cell Division Gizmo Answer Key: Mitosis vs Meiosis Explained',
+    excerpt: 'Stuck on the Cell Division Gizmo? Here\'s a clear breakdown of mitosis, meiosis, and how to answer every question on the student exploration sheet.',
+    date: '2026-04-21',
+    author: 'Gizmos Answer Key Team',
+    keywords: ['Cell Division Gizmo answer key', 'Mitosis Gizmo answers', 'Meiosis Gizmo student exploration', 'cell cycle Gizmo answers', 'ExploreLearning cell division'],
+    content: `# Cell Division Gizmo Answer Key: Mitosis vs Meiosis Explained
+
+If you're working through the Cell Division Gizmo and feeling lost, you're not alone. This is one of the most searched Gizmos on our site — and for good reason. Mitosis and meiosis look similar on the surface, but the differences matter a lot, and the student exploration sheet really tests whether you understand them.
+
+This guide walks through the key concepts and the types of questions you'll see. Use it to check your understanding, not to skip the thinking.
+
+## What the Cell Division Gizmo Covers
+
+The Cell Division Gizmo lets you observe cells going through mitosis and meiosis step by step. You'll watch chromosomes duplicate, separate, and divide — and you'll be asked to explain what's happening at each phase.
+
+The exploration sheet typically covers:
+
+- The stages of mitosis (PMAT: Prophase, Metaphase, Anaphase, Telophase)
+- How meiosis differs from mitosis
+- Why cells divide
+- What happens to chromosome number during each process
+
+## Mitosis: The Key Points
+
+Mitosis produces **two identical daughter cells**, each with the same number of chromosomes as the parent cell. It's used for growth and repair.
+
+The stages go like this:
+
+**Interphase** — The cell grows and copies its DNA. This happens before mitosis officially starts, but it's critical.
+
+**Prophase** — Chromosomes condense and become visible. The nuclear envelope breaks down.
+
+**Metaphase** — Chromosomes line up along the middle of the cell (the metaphase plate).
+
+**Anaphase** — Sister chromatids are pulled to opposite ends of the cell.
+
+**Telophase + Cytokinesis** — Two new nuclei form, and the cell splits into two.
+
+A common question on the exploration sheet: *"How many chromosomes does each daughter cell have compared to the parent cell?"*
+
+Answer: The same number. If the parent cell had 46 chromosomes, each daughter cell has 46.
+
+## Meiosis: Where It Gets Tricky
+
+Meiosis produces **four genetically unique cells**, each with half the number of chromosomes. It's used to make sex cells (sperm and eggs).
+
+The key difference students miss: meiosis goes through **two rounds of division** (Meiosis I and Meiosis II), while mitosis only goes through one.
+
+After Meiosis I: you have 2 cells, each with half the chromosomes (but chromosomes are still doubled).
+After Meiosis II: you have 4 cells, each with half the chromosomes (and chromosomes are no longer doubled).
+
+A question that trips people up: *"Why is it important that sex cells have half the normal chromosome number?"*
+
+Answer: When sperm and egg combine during fertilization, the resulting cell (zygote) will have the correct full number of chromosomes. If sex cells had the full number, the zygote would have double — and that causes serious problems.
+
+## Crossing Over: The Bonus Concept
+
+Some versions of the Cell Division Gizmo also cover **crossing over** — when homologous chromosomes exchange segments during Meiosis I. This is why offspring aren't identical copies of their parents.
+
+If your exploration sheet asks about genetic variation, crossing over is almost always part of the answer.
+
+## How to Use This Guide
+
+Don't read this before you do the Gizmo. Seriously.
+
+Go through the simulation first. Watch the chromosomes move. Try to answer the questions yourself. Then come back here and check.
+
+If your answer matches, great — you understood it. If it doesn't, read the explanation and figure out where your thinking went wrong. That's the part that actually helps you on a test.
+
+For the full answer key to the Cell Division Gizmo, visit [gizmosanswerkey.shop](https://gizmosanswerkey.shop) and search "Cell Division."
+
+---
+
+*Free, no login required.*`
+  },
+  {
+    id: 'building-dna-gizmo-answer-key',
+    title: 'Building DNA Gizmo Answer Key: Student Exploration Sheet Guide',
+    excerpt: 'Working through the Building DNA Gizmo? This guide covers nucleotide pairing, DNA replication, and the questions students get wrong most often.',
+    date: '2026-04-21',
+    author: 'Gizmos Answer Key Team',
+    keywords: ['Building DNA Gizmo answer key', 'DNA structure Gizmo answers', 'Building DNA student exploration sheet', 'nucleotide Gizmo answers', 'DNA replication Gizmo'],
+    content: `# Building DNA Gizmo Answer Key: Student Exploration Sheet Guide
+
+The Building DNA Gizmo is one of those labs that seems straightforward until you hit the written questions. You can drag nucleotides into place just fine — but then the exploration sheet asks you to *explain* base pairing rules, and suddenly it's not so simple.
+
+This guide covers the core concepts and the questions students most commonly get wrong. Do the Gizmo first, then use this to check your work.
+
+## What You're Actually Building
+
+DNA is made of **nucleotides**. Each nucleotide has three parts:
+- A sugar (deoxyribose)
+- A phosphate group
+- A nitrogenous base (A, T, C, or G)
+
+The Gizmo has you assemble a DNA strand by connecting these nucleotides. The sugar and phosphate form the "backbone," and the bases stick out in the middle — where they pair with the bases on the opposite strand.
+
+## Base Pairing Rules (This Will Be on the Test)
+
+This is the most tested concept in the Building DNA Gizmo:
+
+- **A pairs with T** (Adenine — Thymine)
+- **C pairs with G** (Cytosine — Guanine)
+
+That's it. These are called **complementary base pairs**.
+
+A common exploration sheet question: *"If one strand of DNA reads ATCGGA, what does the complementary strand read?"*
+
+Answer: TAGCCT. Flip every base to its complement.
+
+## DNA Replication: The Part Everyone Forgets
+
+The second half of the Building DNA Gizmo usually covers **DNA replication** — how a cell copies its DNA before dividing.
+
+The key concept: replication is **semi-conservative**. That means each new DNA molecule keeps one original strand and builds one new strand.
+
+Steps students need to know:
+
+1. The double helix **unwinds** (helicase breaks the hydrogen bonds between base pairs)
+2. Each strand serves as a **template**
+3. New nucleotides attach to each template following base pairing rules
+4. Result: two identical DNA molecules, each with one old strand and one new strand
+
+A question that catches people off guard: *"Why is DNA replication called semi-conservative?"*
+
+Answer: Because each daughter molecule conserves (keeps) half of the original DNA — one original strand plus one newly built strand.
+
+## The Direction Question
+
+Some exploration sheets ask about the **direction** of DNA replication. DNA is always built in the 5' to 3' direction. This means the two new strands are built in opposite directions — one continuously (leading strand) and one in fragments (lagging strand).
+
+If your Gizmo doesn't go into this level of detail, don't worry about it. But if it does, that's the answer.
+
+## Mutations: If Your Gizmo Covers Them
+
+Some versions of the Building DNA Gizmo include a section on mutations — what happens when the wrong nucleotide gets inserted during replication.
+
+The three types to know:
+- **Substitution** — one base is swapped for another
+- **Insertion** — an extra base is added
+- **Deletion** — a base is removed
+
+Insertions and deletions are generally more damaging than substitutions because they shift the entire reading frame of the DNA sequence.
+
+## Check Your Work Here
+
+After you've finished the Gizmo and answered all the questions yourself, use [gizmosanswerkey.shop](https://gizmosanswerkey.shop) to check your answers. Search "Building DNA" and you'll find the full answer key with explanations.
+
+If something doesn't match, don't just change your answer — read the explanation and figure out where your reasoning went wrong. That's what actually sticks.
+
+---
+
+*Free, no login required.*`
   }
 ];
