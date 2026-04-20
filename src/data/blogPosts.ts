@@ -510,14 +510,10 @@ The three types to know:
 
 Insertions and deletions are generally more damaging than substitutions because they shift the entire reading frame of the DNA sequence.
 
-## Check Your Work Here
+Finished the lab but feeling unsure about those final analysis questions? Don't leave your grade to chance.
 
-After you've finished the Gizmo and answered all the questions yourself, use [gizmosanswerkey.shop](https://gizmosanswerkey.shop) to check your answers. Search "Building DNA" and you'll find the full answer key with explanations.
+Visit [gizmosanswerkey.shop](https://gizmosanswerkey.shop) and search "Building DNA" to see the full, verified answer key. We explain the why behind every answer so you're actually ready for the test.
 
-If something doesn't match, don't just change your answer — read the explanation and figure out where your reasoning went wrong. That's what actually sticks.
-
----
-
-*Free, no login required.*`
+⚡ Free. Full Explanations. No Login Needed.`
   }
 ];
