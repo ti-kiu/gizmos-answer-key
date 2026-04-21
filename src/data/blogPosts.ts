@@ -530,8 +530,7 @@ Visit [gizmosanswerkey.shop](https://gizmosanswerkey.shop) and search "Building 
     date: '2026-04-22',
     author: 'Student Story',
     keywords: ['Ecosystem Gizmo answer key', 'Ecosystem Gizmo answers', 'ExploreLearning Ecosystem Gizmo', 'predator prey Gizmo', 'carrying capacity Gizmo'],
-    content: `# I got a 58 on my Ecosystem Gizmo\u2026 turns out I misunderstood the whole thing
-
+    content: `
 I thought I was fine.
 
 Did the Ecosystem Gizmo, filled everything in, submitted.
@@ -578,8 +577,7 @@ Better than guessing and losing points.`
     date: '2026-04-22',
     author: 'Student Story',
     keywords: ['Circuit Builder Gizmo answer key', 'Circuit Builder Gizmo answers', "Ohm's Law Gizmo", 'series parallel circuit Gizmo', 'ExploreLearning Circuit Builder'],
-    content: `# The Circuit Builder Gizmo is easy\u2026 until the questions hit
-
+    content: `
 The simulation? Easy.
 
 Drag wires, connect stuff, bulbs light up. Cool.
