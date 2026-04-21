@@ -520,6 +520,109 @@ Finished the lab but feeling unsure about those final analysis questions? Don't 
 
 Visit [gizmosanswerkey.shop](https://gizmosanswerkey.shop) and search "Building DNA" to see the full, verified answer key. We explain the why behind every answer so you're actually ready for the test.
 
+
 ⚡ Free. Full Explanations. No Login Needed.`
+  },
+  {
+    id: 'ecosystem-gizmo-answer-key',
+    title: 'I got a 58 on my Ecosystem Gizmo\u2026 turns out I misunderstood the whole thing',
+    excerpt: "I thought I was fine. Did the Ecosystem Gizmo, filled everything in, submitted. Next day? 58. Here's what I actually got wrong.",
+    date: '2026-04-22',
+    author: 'Student Story',
+    keywords: ['Ecosystem Gizmo answer key', 'Ecosystem Gizmo answers', 'ExploreLearning Ecosystem Gizmo', 'predator prey Gizmo', 'carrying capacity Gizmo'],
+    content: `# I got a 58 on my Ecosystem Gizmo\u2026 turns out I misunderstood the whole thing
+
+I thought I was fine.
+
+Did the Ecosystem Gizmo, filled everything in, submitted.
+Next day? 58.
+
+Not because I didn't do it \u2014 I just didn't actually understand what was going on.
+I was basically dragging sliders and copying numbers.
+
+If you're stuck on the Ecosystem Gizmo right now, this might be the exact problem.
+
+It's not testing "food chains".
+It's testing whether you understand what happens when one thing changes.
+
+Like predators and prey.
+
+More predators \u2192 prey drops
+Less prey \u2192 predators start dying
+Then prey comes back \u2192 then predators come back
+
+It loops. That's the whole point.
+
+Same with carrying capacity.
+If your graph spikes and crashes over and over \u2014 that's not wrong. That's literally the answer.
+
+Most people lose points on the explanation part, not the simulation.
+
+I started just talking through the graph out loud:
+"this dropped because this increased\u2026"
+That helped way more than rereading notes.
+
+If you're not 100% sure your answers make sense,
+just double check before submitting.
+
+I used this for the Ecosystem Gizmo answer key:
+\ud83d\udc49 [gizmosanswerkey.shop](https://gizmosanswerkey.shop)
+
+Takes like 30 seconds to sanity-check everything.
+Better than guessing and losing points.`
+  },
+  {
+    id: 'circuit-builder-gizmo-answer-key',
+    title: 'The Circuit Builder Gizmo is easy\u2026 until the questions hit',
+    excerpt: "The simulation? Easy. Then the worksheet hits: Explain the relationship between voltage, current, and resistance. Here's the one thing you're missing.",
+    date: '2026-04-22',
+    author: 'Student Story',
+    keywords: ['Circuit Builder Gizmo answer key', 'Circuit Builder Gizmo answers', "Ohm's Law Gizmo", 'series parallel circuit Gizmo', 'ExploreLearning Circuit Builder'],
+    content: `# The Circuit Builder Gizmo is easy\u2026 until the questions hit
+
+The simulation? Easy.
+
+Drag wires, connect stuff, bulbs light up. Cool.
+
+Then the worksheet hits:
+"Explain the relationship between voltage, current, and resistance."
+
+\u2026and your brain just stops.
+
+If that's you, you're not dumb \u2014 you just missed one thing.
+
+Everything in this Gizmo is just:
+**V = IR**
+
+Voltage = push
+Current = flow
+Resistance = blockage
+
+That's it.
+
+More voltage \u2192 more current
+More resistance \u2192 less current
+
+Every question is just remixing this.
+
+The part people mess up is series vs parallel.
+
+**Series:**
+More bulbs \u2192 more resistance \u2192 dimmer
+
+**Parallel:**
+More branches \u2192 less resistance \u2192 stays bright
+
+Teachers don't want "what happened".
+They want "why it happened".
+
+That's where most answers lose marks.
+
+If you're even slightly unsure, don't risk it.
+
+I checked mine here:
+\ud83d\udc49 [gizmosanswerkey.shop](https://gizmosanswerkey.shop) (search Circuit Builder)
+
+Way faster than redoing the whole thing after getting it wrong.`
   }
 ];
