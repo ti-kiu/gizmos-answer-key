@@ -2043,6 +2043,58 @@ const gizmos: Gizmo[] = [
       },
     ],
   },
+  {
+    slug: 'phases-of-water',
+    title: 'Phases of Water',
+    subject: 'Physical Science',
+    subject_slug: 'physical-science',
+    grade: '6-8',
+    description: 'Explore the three phases of water — solid, liquid, and gas — and understand heating curves, phase changes, and latent heat. Free answer key for all student exploration sheet questions.',
+    sections: [
+      {
+        title: 'Prior Knowledge Questions',
+        questions: [
+          { question: 'What are the three phases (states) of water?', answer: 'The three phases of water are solid (ice), liquid (water), and gas (water vapor/steam).' },
+          { question: 'At what temperature does water freeze at sea level?', answer: 'Water freezes at 0°C (32°F) at sea level (standard atmospheric pressure).' },
+          { question: 'At what temperature does water boil at sea level?', answer: 'Water boils at 100°C (212°F) at sea level (standard atmospheric pressure).' },
+        ],
+      },
+      {
+        title: 'Activity A – Heating Curve',
+        questions: [
+          { question: 'Describe the shape of a heating curve for water.', answer: 'The heating curve shows temperature rising, then a flat plateau at 0°C (melting), rising again, then another flat plateau at 100°C (boiling), then rising again. The pattern is: up → flat → up → flat → up.' },
+          { question: 'Why does the temperature stop rising during a phase change?', answer: 'During a phase change, the added energy (heat) is used to break intermolecular bonds rather than increase the temperature. This energy is called latent heat.' },
+          { question: 'What are the two flat sections on the heating curve called?', answer: 'The first flat section at 0°C is the melting point (solid → liquid). The second flat section at 100°C is the boiling point (liquid → gas). Both represent phase changes where latent heat is absorbed.' },
+          { question: 'What is latent heat?', answer: 'Latent heat is the energy absorbed or released during a phase change without a change in temperature. It is used to break or form intermolecular bonds.' },
+        ],
+      },
+      {
+        title: 'Activity B – Molecular Level Changes',
+        questions: [
+          { question: 'What is happening at the molecular level when ice melts?', answer: 'When ice melts, the water molecules absorb energy and break free from their rigid crystal lattice structure. They gain enough energy to move past each other, becoming liquid water.' },
+          { question: 'What is happening at the molecular level when water boils?', answer: 'When water boils, molecules absorb enough energy to completely overcome intermolecular attractions and escape into the gas phase, moving rapidly and independently as water vapor.' },
+          { question: 'How do the molecules in ice differ from molecules in liquid water?', answer: 'In ice, molecules are locked in a fixed hexagonal crystal lattice and can only vibrate. In liquid water, molecules are still close together but can slide past each other and move more freely.' },
+          { question: 'Why does ice float on liquid water?', answer: 'Ice floats because its crystal lattice structure spaces molecules farther apart than in liquid water, making ice less dense (≈0.92 g/cm³) than liquid water (1.0 g/cm³).' },
+        ],
+      },
+      {
+        title: 'Activity C – Cooling Curve',
+        questions: [
+          { question: 'How does a cooling curve differ from a heating curve?', answer: 'A cooling curve is the reverse of a heating curve. Temperature decreases, then plateaus at 100°C (condensation) and again at 0°C (freezing), with energy being released rather than absorbed during phase changes.' },
+          { question: 'What is the difference between evaporation and boiling?', answer: 'Evaporation occurs at the surface of a liquid at any temperature, while boiling occurs throughout the entire liquid at the boiling point (100°C at sea level). Both convert liquid to gas.' },
+          { question: 'What is condensation?', answer: 'Condensation is the phase change from gas to liquid. Water vapor loses energy, slows down, and intermolecular attractions pull molecules together to form liquid water.' },
+        ],
+      },
+      {
+        title: 'Assessment Questions',
+        questions: [
+          { question: 'A student heats ice from -20°C to 120°C. Describe what happens at each stage.', answer: '-20°C to 0°C: Ice temperature rises as molecules vibrate faster. At 0°C: Temperature plateaus — latent heat of fusion absorbed, ice melts to liquid. 0°C to 100°C: Liquid water temperature rises. At 100°C: Temperature plateaus — latent heat of vaporization absorbed, water boils to steam. Above 100°C: Steam temperature rises.' },
+          { question: 'Which requires more energy — melting ice or boiling water? Why?', answer: 'Boiling water requires more energy. The latent heat of vaporization (2260 J/g) is much greater than the latent heat of fusion (334 J/g) because all intermolecular bonds must be completely broken to convert liquid to gas.' },
+          { question: 'If you add heat to water at 100°C, why doesn\'t the temperature increase immediately?', answer: 'At 100°C, all added energy goes into breaking intermolecular bonds to convert liquid water to steam (latent heat of vaporization). The temperature only rises again once all the liquid has vaporized.' },
+        ],
+      },
+    ],
+  },
 ]
 
 export function getAllGizmos(): Gizmo[] {
