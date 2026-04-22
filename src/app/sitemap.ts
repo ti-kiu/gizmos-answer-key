@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { getAllGizmos } from '@/lib/gizmos'
+import { blogPosts } from '@/data/blogPosts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const gizmos = getAllGizmos()
@@ -10,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: base, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
     { url: `${base}/gizmos`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${base}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/pricing`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     ...subjects.map(s => ({
       url: `${base}/subjects/${s}`,
@@ -22,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
+    })),
+    ...blogPosts.map(p => ({
+      url: `${base}/blog/${p.id}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
     })),
   ]
 }
