@@ -8,16 +8,16 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: '✅ Free Gizmos Answer Key - All Student Exploration Sheets',
-    template: '%s | Gizmos Answer Key',
+    default: 'Free Gizmo Answer Keys - All Labs, All Grades | GizmosAnswerKey',
+    template: '%s | GizmosAnswerKey',
   },
-  description: '🎓 Get instant free answers for 80+ ExploreLearning Gizmos. Complete answer keys with step-by-step explanations for all student exploration sheets.',
-  keywords: ['gizmos answer key', 'explorelearning gizmos answers', 'student exploration answers', 'free gizmo answers', 'gizmos homework help', 'gizmo answer sheet'],
+  description: 'Free answer keys for every ExploreLearning Gizmo lab. Photosynthesis, ecosystems, genetics and 100+ more. Instant access, no signup required.',
+  keywords: ['gizmo answer key', 'gizmos answer key', 'free gizmo answers', 'explorelearning gizmos answers', 'student exploration answers', 'gizmo answer sheet', 'gizmos homework help'],
   openGraph: {
     type: 'website',
-    siteName: 'Gizmos Answer Key',
-    title: 'Free Gizmos Answer Key - All Student Exploration Sheets',
-    description: 'Get instant free answers for 80+ ExploreLearning Gizmos with step-by-step explanations.',
+    siteName: 'GizmosAnswerKey',
+    title: 'Free Gizmo Answer Keys - All Labs, All Grades',
+    description: 'Free answer keys for every ExploreLearning Gizmo lab. Instant access, no signup required.',
   },
 }
 

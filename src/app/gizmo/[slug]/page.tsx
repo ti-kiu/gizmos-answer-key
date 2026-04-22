@@ -13,13 +13,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const gizmo = getGizmoBySlug(params.slug)
   if (!gizmo) return {}
   return {
-    title: `${gizmo.title} Answer Key - Free Student Exploration Answers`,
-    description: `✅ Free ${gizmo.title} Gizmo answer key for ${gizmo.grade} grade. Complete answers with step-by-step explanations for all activities. Updated 2026.`,
+    title: `${gizmo.title} Gizmo Answer Key (Free) | GizmosAnswerKey`,
+    description: `Free answer key for the ${gizmo.title} Gizmo. All student exploration sheet answers with step-by-step explanations. Instant access, no signup required.`,
     keywords: [
       `${gizmo.title} answer key`,
+      `${gizmo.title} gizmo answer key`,
       `${gizmo.title} gizmo answers`,
       `${gizmo.title} student exploration answers`,
-      `${gizmo.title} gizmo answer key`,
+      `free ${gizmo.title} answers`,
     ],
     alternates: { canonical: `${BASE}/gizmo/${gizmo.slug}` },
   }
