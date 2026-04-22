@@ -622,5 +622,102 @@ I checked mine here:
 \ud83d\udc49 [gizmosanswerkey.shop](https://gizmosanswerkey.shop) (search Circuit Builder)
 
 Way faster than redoing the whole thing after getting it wrong.`
+  },
+  {
+    id: 'phases-of-water-gizmo',
+    title: 'I thought the Phases of Water Gizmo was easy… I was wrong',
+    excerpt: 'Water freezes. Water boils. Easy, right? Then the worksheet asked what\'s happening "at the molecular level". Yeah… no idea.',
+    date: '2026-04-23',
+    author: 'Student Story',
+    keywords: ['Phases of Water Gizmo answer key', 'phases of water gizmo answers', 'latent heat gizmo', 'heating curve gizmo', 'ExploreLearning phases of water'],
+    content: `
+At first I thought this one was free marks.
+
+Water freezes. Water boils. Easy, right?
+
+Then the worksheet asked what's happening "at the molecular level".
+
+Yeah… no idea.
+
+If you're stuck here, same.
+
+The confusing part is the graph.
+
+You see the temperature go up… then suddenly flat… then up again.
+
+That flat line is the whole thing.
+
+Temperature stops rising because the energy is being used to break bonds — not heat it more.
+
+That's called latent heat.
+
+And it shows up on almost every question.
+
+Same with heating curves:
+up → flat → up → flat → up
+
+Two flat parts = phase changes.
+
+Once I understood that, everything else made sense.
+
+If it still feels fuzzy, don't just guess.
+
+I found a full breakdown here:
+👉 [gizmosanswerkey.shop/gizmo/phases-of-water](https://gizmosanswerkey.shop/gizmo/phases-of-water)
+
+Honestly cleared it up way faster than rereading the textbook.`
+  },
+  {
+    id: 'plate-tectonics-gizmo',
+    title: 'Why your lab partner finishes the Plate Tectonics Gizmo in 10 minutes',
+    excerpt: 'It\'s not that they\'re smarter. They just already understand the model. Everything in this Gizmo comes down to 3 things.',
+    date: '2026-04-23',
+    author: 'Student Story',
+    keywords: ['Plate Tectonics Gizmo answer key', 'plate tectonics gizmo answers', 'convergent divergent transform boundaries gizmo', 'subduction gizmo', 'ExploreLearning plate tectonics'],
+    content: `
+You ever notice this?
+
+Someone finishes the Plate Tectonics Gizmo super fast,
+and you're still stuck on question 3.
+
+It's not that they're smarter.
+
+They just already understand the model.
+
+Everything in this Gizmo comes down to 3 things:
+
+**Convergent** → plates collide
+**Divergent** → plates move apart
+**Transform** → plates slide past
+
+That's it.
+
+Most questions are just:
+"which one is this and why?"
+
+The tricky one is earthquakes.
+
+Transform boundaries = more earthquakes
+Because plates get stuck → then suddenly slip
+
+Subduction is the other one people mix up.
+
+Oceanic plate always goes under.
+It's denser.
+
+That's why volcanoes show up near those zones.
+
+Also — teachers care a LOT about wording.
+
+Not just "what happens", but using terms like:
+subduction, lithosphere, etc.
+
+If you're stuck rewriting answers over and over,
+just check how it's supposed to be explained.
+
+I used this:
+👉 [gizmosanswerkey.shop/gizmo/plate-tectonics](https://gizmosanswerkey.shop/gizmo/plate-tectonics)
+
+Helped me figure out the wording way faster than I would have on my own.`
   }
 ];
