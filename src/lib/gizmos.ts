@@ -25,7 +25,7 @@ const gizmos: Gizmo[] = [
     subject: 'Life Science',
     subject_slug: 'life-science',
     grade: '6-8',
-    description: 'Explore how plants use light, water, and carbon dioxide to produce glucose and oxygen through photosynthesis.',
+    description: 'Explore how plants use light, water, and carbon dioxide to produce glucose and oxygen through photosynthesis. Free answer key for all student exploration sheet questions.',
     sections: [
       {
         title: 'Prior Knowledge Questions',
@@ -41,6 +41,33 @@ const gizmos: Gizmo[] = [
           { question: 'What happens to the rate of photosynthesis as light intensity increases?', answer: 'As light intensity increases, the rate of photosynthesis increases until it reaches a maximum plateau.' },
           { question: 'Why does the rate of photosynthesis level off at high light intensities?', answer: 'The rate levels off because other factors (like CO₂ concentration or temperature) become limiting factors.' },
           { question: 'What is the equation for photosynthesis?', answer: '6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂' },
+          { question: 'At what light intensity does the rate of photosynthesis reach its maximum in the Gizmo?', answer: 'In the Gizmo simulation, the rate typically plateaus around 80–100% light intensity, after which additional light produces no further increase.' },
+          { question: 'What unit is used to measure the rate of photosynthesis in the Gizmo?', answer: 'The rate of photosynthesis is measured in O₂ bubbles per minute, representing oxygen released by the plant.' },
+        ],
+      },
+      {
+        title: 'Activity B – CO₂ Concentration',
+        questions: [
+          { question: 'How does increasing CO₂ concentration affect the rate of photosynthesis?', answer: 'Increasing CO₂ concentration increases the rate of photosynthesis because CO₂ is a raw material used in the Calvin cycle to produce glucose.' },
+          { question: 'What happens to photosynthesis if CO₂ is removed from the environment?', answer: 'Without CO₂, photosynthesis cannot occur because carbon dioxide is essential for building glucose molecules.' },
+          { question: 'Which factor — light intensity or CO₂ concentration — has a greater effect on photosynthesis rate at low levels?', answer: 'At low levels, both are limiting factors. Light intensity tends to have a more immediate effect at very low levels, but CO₂ becomes the primary limiting factor once light is sufficient.' },
+        ],
+      },
+      {
+        title: 'Activity C – Temperature',
+        questions: [
+          { question: 'How does temperature affect the rate of photosynthesis?', answer: 'Photosynthesis rate increases with temperature up to an optimal point (around 25–35°C for most plants), then decreases sharply as enzymes denature at high temperatures.' },
+          { question: 'Why does photosynthesis slow down at very high temperatures?', answer: 'At high temperatures, the enzymes involved in photosynthesis (such as RuBisCO) begin to denature, losing their shape and function, which slows the reaction.' },
+          { question: 'What is the optimal temperature range for photosynthesis in the Gizmo?', answer: 'The optimal temperature in the Gizmo is typically around 25°C, where the rate of photosynthesis is highest before enzyme activity declines.' },
+        ],
+      },
+      {
+        title: 'Assessment Questions',
+        questions: [
+          { question: 'What are the three limiting factors of photosynthesis explored in this Gizmo?', answer: 'The three limiting factors are: (1) light intensity, (2) CO₂ concentration, and (3) temperature.' },
+          { question: 'A plant is placed in bright light but photosynthesis is still slow. What could be the limiting factor?', answer: 'If light is not the issue, the limiting factor could be low CO₂ concentration or a temperature that is too low or too high for optimal enzyme activity.' },
+          { question: 'How do the products of photosynthesis benefit other organisms?', answer: 'Glucose produced by photosynthesis provides energy for the plant and for animals that eat the plant. Oxygen released is used by most living organisms for cellular respiration.' },
+          { question: 'Compare the rates of photosynthesis at 10% vs 100% light intensity. What does this tell you?', answer: 'At 10% light intensity the rate is much lower than at 100%, demonstrating that light is a key limiting factor. This shows a direct relationship between light availability and photosynthetic output up to the saturation point.' },
         ],
       },
     ],

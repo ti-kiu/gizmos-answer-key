@@ -12,16 +12,37 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const gizmo = getGizmoBySlug(params.slug)
   if (!gizmo) return {}
+
+  // Photosynthesis gets a hand-tuned title/description to match high-CTR search queries
+  const isPhotosynthesis = params.slug === 'photosynthesis-lab'
+  const title = isPhotosynthesis
+    ? 'Photosynthesis Lab Gizmo Answer Key (Free) | GizmosAnswerKey'
+    : `${gizmo.title} Gizmo Answer Key (Free) | GizmosAnswerKey`
+  const description = isPhotosynthesis
+    ? 'Free answer key for the Photosynthesis Lab Gizmo. All student exploration sheet answers for light intensity, CO₂, and temperature activities. Instant access, no signup required.'
+    : `Free answer key for the ${gizmo.title} Gizmo. All student exploration sheet answers with step-by-step explanations. Instant access, no signup required.`
+  const keywords = isPhotosynthesis
+    ? [
+        'photosynthesis lab gizmo answer key',
+        'photosynthesis lab gizmo answer key free',
+        'gizmo photosynthesis lab answers',
+        'photosynthesis lab answers',
+        'photosynthesis gizmo answers',
+        'free photosynthesis lab answer key',
+        'photosynthesis student exploration answers',
+      ]
+    : [
+        `${gizmo.title} answer key`,
+        `${gizmo.title} gizmo answer key`,
+        `${gizmo.title} gizmo answers`,
+        `${gizmo.title} student exploration answers`,
+        `free ${gizmo.title} answers`,
+      ]
+
   return {
-    title: `${gizmo.title} Gizmo Answer Key (Free) | GizmosAnswerKey`,
-    description: `Free answer key for the ${gizmo.title} Gizmo. All student exploration sheet answers with step-by-step explanations. Instant access, no signup required.`,
-    keywords: [
-      `${gizmo.title} answer key`,
-      `${gizmo.title} gizmo answer key`,
-      `${gizmo.title} gizmo answers`,
-      `${gizmo.title} student exploration answers`,
-      `free ${gizmo.title} answers`,
-    ],
+    title,
+    description,
+    keywords,
     alternates: { canonical: `${BASE}/gizmo/${gizmo.slug}` },
   }
 }
