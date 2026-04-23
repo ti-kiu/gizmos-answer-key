@@ -86,6 +86,7 @@ const gizmos: Gizmo[] = [
           { question: 'Why do cells need to divide?', answer: 'Cells divide for growth, repair of damaged tissues, and reproduction of organisms.' },
           { question: 'What is the name of the process by which body cells divide?', answer: 'The process is called mitosis.' },
           { question: 'How many chromosomes do human body cells have?', answer: 'Human body cells have 46 chromosomes (23 pairs).' },
+          { question: 'What is the difference between a cell\'s nucleus and its cytoplasm?', answer: 'The nucleus contains the cell\'s genetic material (DNA), while the cytoplasm is the jelly-like fluid that fills the rest of the cell and contains organelles.' },
         ],
       },
       {
@@ -94,6 +95,34 @@ const gizmos: Gizmo[] = [
           { question: 'List the four stages of mitosis in order.', answer: 'Prophase, Metaphase, Anaphase, Telophase (PMAT).' },
           { question: 'During which phase do chromosomes line up in the middle of the cell?', answer: 'Chromosomes line up along the cell\'s equator during Metaphase.' },
           { question: 'How many daughter cells are produced by mitosis?', answer: 'Mitosis produces 2 genetically identical daughter cells.' },
+          { question: 'What happens during Prophase?', answer: 'During Prophase, chromosomes condense and become visible, the nuclear envelope breaks down, and the spindle fibers begin to form.' },
+          { question: 'What occurs during Anaphase?', answer: 'During Anaphase, sister chromatids are pulled apart to opposite poles of the cell by spindle fibers.' },
+          { question: 'Describe what happens during Telophase.', answer: 'During Telophase, chromosomes reach the poles and begin to uncoil, the nuclear envelope reforms around each set of chromosomes, and the spindle fibers break down.' },
+        ],
+      },
+      {
+        title: 'Activity B – Interphase and the Cell Cycle',
+        questions: [
+          { question: 'What is interphase?', answer: 'Interphase is the longest phase of the cell cycle, during which the cell grows, carries out normal functions, and replicates its DNA in preparation for division.' },
+          { question: 'What are the three stages of interphase?', answer: 'G1 (first gap/growth), S phase (DNA synthesis/replication), and G2 (second gap/preparation for mitosis).' },
+          { question: 'Why is DNA replication important before mitosis?', answer: 'DNA must be replicated so each daughter cell receives a complete, identical copy of the genetic information.' },
+          { question: 'What is cytokinesis?', answer: 'Cytokinesis is the division of the cytoplasm that follows mitosis, resulting in two separate daughter cells.' },
+        ],
+      },
+      {
+        title: 'Activity C – Mitosis vs. Meiosis',
+        questions: [
+          { question: 'What is the main difference between mitosis and meiosis?', answer: 'Mitosis produces 2 genetically identical diploid cells for growth and repair; meiosis produces 4 genetically unique haploid cells for sexual reproduction.' },
+          { question: 'How many chromosomes do cells produced by meiosis contain?', answer: 'Cells produced by meiosis (gametes) contain 23 chromosomes — half the normal number (haploid).' },
+          { question: 'Where does meiosis occur in the human body?', answer: 'Meiosis occurs in the gonads — the testes (producing sperm) and ovaries (producing eggs).' },
+        ],
+      },
+      {
+        title: 'Assessment Questions',
+        questions: [
+          { question: 'A cell has 12 chromosomes before mitosis. How many chromosomes will each daughter cell have?', answer: 'Each daughter cell will have 12 chromosomes — mitosis maintains the chromosome number.' },
+          { question: 'What would happen if a cell skipped Anaphase?', answer: 'If Anaphase were skipped, sister chromatids would not separate, resulting in daughter cells with incorrect chromosome numbers (aneuploidy), which can cause cell death or diseases like cancer.' },
+          { question: 'Why is it important that mitosis produces genetically identical cells?', answer: 'Genetic identity ensures that all body cells carry the same instructions, which is essential for proper tissue function, growth, and repair.' },
         ],
       },
     ],
@@ -137,6 +166,7 @@ const gizmos: Gizmo[] = [
           { question: 'What does DNA stand for?', answer: 'DNA stands for Deoxyribonucleic Acid.' },
           { question: 'What are the four nitrogen bases found in DNA?', answer: 'Adenine (A), Thymine (T), Guanine (G), and Cytosine (C).' },
           { question: 'What is gel electrophoresis used for?', answer: 'Gel electrophoresis is used to separate DNA fragments by size using an electric current.' },
+          { question: 'What is base pairing in DNA?', answer: 'Base pairing is the rule that Adenine always pairs with Thymine (A-T) and Guanine always pairs with Cytosine (G-C), held together by hydrogen bonds.' },
         ],
       },
       {
@@ -144,6 +174,34 @@ const gizmos: Gizmo[] = [
         questions: [
           { question: 'Which direction do DNA fragments move during electrophoresis?', answer: 'DNA fragments move toward the positive electrode (anode) because DNA is negatively charged.' },
           { question: 'Do smaller or larger DNA fragments travel farther in the gel?', answer: 'Smaller fragments travel farther because they move more easily through the gel matrix.' },
+          { question: 'What is a restriction enzyme?', answer: 'A restriction enzyme is a protein that cuts DNA at specific recognition sequences, producing fragments of different sizes used in gel electrophoresis.' },
+          { question: 'Why is a DNA ladder (marker) used in gel electrophoresis?', answer: 'A DNA ladder contains fragments of known sizes and is run alongside samples to estimate the size of unknown DNA fragments by comparison.' },
+          { question: 'What does it mean if two DNA samples produce identical band patterns?', answer: 'Identical band patterns indicate the DNA fragments are the same size, suggesting the samples may come from the same individual or closely related sources.' },
+        ],
+      },
+      {
+        title: 'Activity B – DNA Fingerprinting',
+        questions: [
+          { question: 'What is DNA fingerprinting?', answer: 'DNA fingerprinting is a technique that analyzes specific regions of DNA (STRs) to create a unique profile for an individual, used in forensics, paternity testing, and identification.' },
+          { question: 'What are STRs (Short Tandem Repeats)?', answer: 'STRs are short sequences of DNA that repeat multiple times; the number of repeats varies between individuals, making them useful for identification.' },
+          { question: 'How is DNA fingerprinting used in criminal investigations?', answer: 'DNA from a crime scene (blood, hair, saliva) is extracted, amplified using PCR, and run through gel electrophoresis. The resulting band pattern is compared to suspects\' DNA profiles.' },
+          { question: 'Can identical twins be distinguished by DNA fingerprinting?', answer: 'No — identical twins have the same DNA sequence, so their DNA fingerprints are identical. Other methods must be used to distinguish them.' },
+        ],
+      },
+      {
+        title: 'Activity C – PCR (Polymerase Chain Reaction)',
+        questions: [
+          { question: 'What is PCR used for?', answer: 'PCR (Polymerase Chain Reaction) is used to amplify (make millions of copies of) a specific DNA segment from a very small sample.' },
+          { question: 'What are the three steps of PCR?', answer: 'Denaturation (DNA strands separate at ~95°C), Annealing (primers attach to target sequences at ~55°C), and Extension (DNA polymerase builds new strands at ~72°C).' },
+          { question: 'Why is PCR important for forensic analysis?', answer: 'PCR allows scientists to amplify tiny amounts of DNA from crime scenes (a single hair or drop of blood) into enough material for analysis.' },
+        ],
+      },
+      {
+        title: 'Assessment Questions',
+        questions: [
+          { question: 'A DNA sample produces bands at 500, 1000, and 2000 base pairs. A suspect\'s sample produces bands at 500 and 2000 bp. Could the suspect be the source?', answer: 'No — the suspect\'s sample is missing the 1000 bp band. For a match, all bands must align. The suspect is likely not the source of the crime scene DNA.' },
+          { question: 'Why is DNA evidence considered highly reliable in court?', answer: 'The probability of two unrelated individuals having identical DNA profiles across multiple STR loci is extremely small (often less than 1 in a billion), making DNA evidence highly reliable.' },
+          { question: 'What ethical concerns surround DNA databases?', answer: 'Concerns include privacy (who has access to your DNA), potential misuse by governments or corporations, discrimination based on genetic information, and consent issues around familial searching.' },
         ],
       },
     ],
@@ -237,6 +295,7 @@ const gizmos: Gizmo[] = [
           { question: 'What is electric current?', answer: 'Electric current is the flow of electric charge (electrons) through a conductor, measured in amperes (A).' },
           { question: 'What is voltage?', answer: 'Voltage is the electrical potential difference that drives current through a circuit, measured in volts (V).' },
           { question: 'What is resistance?', answer: 'Resistance is the opposition to the flow of electric current, measured in ohms (Ω).' },
+          { question: 'What is a conductor? Give two examples.', answer: 'A conductor is a material that allows electric current to flow easily. Examples include copper wire and aluminum foil.' },
         ],
       },
       {
@@ -244,6 +303,34 @@ const gizmos: Gizmo[] = [
         questions: [
           { question: 'State Ohm\'s Law.', answer: 'Ohm\'s Law states that V = I × R, where V is voltage, I is current, and R is resistance.' },
           { question: 'What happens to current if resistance increases (voltage stays the same)?', answer: 'If resistance increases and voltage stays the same, current decreases (I = V/R).' },
+          { question: 'A circuit has a voltage of 12V and a resistance of 4Ω. What is the current?', answer: 'I = V/R = 12/4 = 3 amperes (A).' },
+          { question: 'If current is 2A and resistance is 5Ω, what is the voltage?', answer: 'V = I × R = 2 × 5 = 10 volts (V).' },
+        ],
+      },
+      {
+        title: 'Activity B – Series Circuits',
+        questions: [
+          { question: 'What is a series circuit?', answer: 'A series circuit is one where all components are connected in a single path, so the same current flows through every component.' },
+          { question: 'What happens to the other bulbs in a series circuit if one bulb burns out?', answer: 'All other bulbs go out because the circuit is broken — there is only one path for current to flow.' },
+          { question: 'How is total resistance calculated in a series circuit?', answer: 'Total resistance in a series circuit is the sum of all individual resistances: R_total = R1 + R2 + R3 + ...' },
+          { question: 'How does voltage distribute across components in a series circuit?', answer: 'Voltage is divided (shared) among all components in a series circuit; each component gets a portion of the total voltage.' },
+        ],
+      },
+      {
+        title: 'Activity C – Parallel Circuits',
+        questions: [
+          { question: 'What is a parallel circuit?', answer: 'A parallel circuit has multiple paths for current to flow; each component is connected across the same two points (same voltage).' },
+          { question: 'What happens to the other bulbs in a parallel circuit if one bulb burns out?', answer: 'The other bulbs remain lit because each branch has its own independent path for current.' },
+          { question: 'How is total resistance calculated in a parallel circuit with two resistors?', answer: '1/R_total = 1/R1 + 1/R2. Total resistance is always less than the smallest individual resistance.' },
+          { question: 'Why do household circuits use parallel wiring?', answer: 'Parallel wiring ensures each appliance receives the full voltage and operates independently — turning off one device doesn\'t affect others.' },
+        ],
+      },
+      {
+        title: 'Assessment Questions',
+        questions: [
+          { question: 'Compare series and parallel circuits: which is safer for home wiring and why?', answer: 'Parallel circuits are safer for home wiring because each device operates at full voltage independently, and a failure in one branch doesn\'t cut power to the entire circuit.' },
+          { question: 'A parallel circuit has two branches with 6Ω and 3Ω resistors and a 9V battery. What is the current through each branch?', answer: 'Branch 1: I = 9/6 = 1.5A. Branch 2: I = 9/3 = 3A. Each branch has the full 9V applied.' },
+          { question: 'What is a short circuit and why is it dangerous?', answer: 'A short circuit occurs when current takes an unintended low-resistance path, causing extremely high current flow that can overheat wires, damage components, or start fires.' },
         ],
       },
     ],
@@ -262,13 +349,42 @@ const gizmos: Gizmo[] = [
           { question: 'What is a force?', answer: 'A force is a push or pull that can change the motion of an object, measured in newtons (N).' },
           { question: 'What is Newton\'s First Law of Motion?', answer: 'An object at rest stays at rest, and an object in motion stays in motion unless acted upon by an unbalanced force (inertia).' },
           { question: 'What is the formula for calculating force?', answer: 'Force = mass × acceleration (F = ma).' },
+          { question: 'What is the difference between speed and velocity?', answer: 'Speed is how fast an object moves (scalar — magnitude only); velocity is speed with a direction (vector — magnitude and direction).' },
         ],
       },
       {
         title: 'Activity A – Newton\'s Laws',
         questions: [
+          { question: 'What is Newton\'s Second Law of Motion?', answer: 'Newton\'s Second Law states that the acceleration of an object is directly proportional to the net force and inversely proportional to its mass: F = ma.' },
           { question: 'What is Newton\'s Third Law of Motion?', answer: 'For every action, there is an equal and opposite reaction.' },
           { question: 'How does friction affect motion?', answer: 'Friction is a force that opposes motion; it slows objects down and converts kinetic energy into heat.' },
+          { question: 'A 10 kg object accelerates at 3 m/s². What is the net force acting on it?', answer: 'F = ma = 10 × 3 = 30 newtons (N).' },
+          { question: 'Give an example of Newton\'s Third Law in everyday life.', answer: 'When you push off a wall, the wall pushes back on you with equal force in the opposite direction. Rocket propulsion is another example — exhaust gases push down, rocket moves up.' },
+        ],
+      },
+      {
+        title: 'Activity B – Gravity and Weight',
+        questions: [
+          { question: 'What is the difference between mass and weight?', answer: 'Mass is the amount of matter in an object (measured in kg, constant everywhere); weight is the gravitational force on an object (measured in N, varies by location).' },
+          { question: 'What is the acceleration due to gravity on Earth?', answer: 'The acceleration due to gravity on Earth is approximately 9.8 m/s² (often rounded to 10 m/s²).' },
+          { question: 'How would your weight change on the Moon compared to Earth?', answer: 'Your weight on the Moon would be about 1/6 of your Earth weight because the Moon\'s gravitational pull is much weaker, but your mass stays the same.' },
+          { question: 'What is free fall?', answer: 'Free fall is the motion of an object falling under the influence of gravity alone, with no air resistance. All objects in free fall accelerate at the same rate regardless of mass.' },
+        ],
+      },
+      {
+        title: 'Activity C – Balanced and Unbalanced Forces',
+        questions: [
+          { question: 'What are balanced forces?', answer: 'Balanced forces are equal forces acting in opposite directions on an object, resulting in no change in motion (net force = 0).' },
+          { question: 'What are unbalanced forces?', answer: 'Unbalanced forces produce a net force greater than zero, causing an object to accelerate (change speed or direction).' },
+          { question: 'A book sits on a table. What two forces are balanced?', answer: 'Gravity pulls the book downward, and the normal force from the table pushes upward. These two forces are equal and opposite, so the book remains stationary.' },
+        ],
+      },
+      {
+        title: 'Assessment Questions',
+        questions: [
+          { question: 'A car of mass 1000 kg accelerates from 0 to 20 m/s in 5 seconds. What is the net force?', answer: 'Acceleration = (20-0)/5 = 4 m/s². F = ma = 1000 × 4 = 4000 N.' },
+          { question: 'Why does a heavier object not fall faster than a lighter one (ignoring air resistance)?', answer: 'Although gravity exerts more force on a heavier object, it also has more mass. Since a = F/m, the extra force and extra mass cancel out, giving the same acceleration (9.8 m/s²) to all objects.' },
+          { question: 'Explain why wearing a seatbelt saves lives using Newton\'s First Law.', answer: 'In a crash, the car stops suddenly but your body tends to keep moving forward (inertia). The seatbelt applies a force to stop your body, preventing it from hitting the windshield.' },
         ],
       },
     ],
