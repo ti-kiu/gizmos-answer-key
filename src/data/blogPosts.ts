@@ -668,6 +668,112 @@ I found a full breakdown here:
 Honestly cleared it up way faster than rereading the textbook.`
   },
   {
+    id: 'gravity-gizmo-11pm',
+    title: "It's 11pm and the Gravity Gizmo makes zero sense — here's the shortcut",
+    excerpt: "If you're here at 11pm trying to finish the Gravity Gizmo, same. Here's the part that confuses everyone — and how to actually get it.",
+    date: '2026-04-24',
+    author: 'Student Story',
+    keywords: ['Gravity Gizmo answer key', 'Gravity Gizmo answers', 'inverse square law Gizmo', 'mass weight Gizmo', 'ExploreLearning Gravity Gizmo'],
+    content: `
+No judgment.
+
+If you're here at 11pm trying to finish the Gravity Gizmo,
+same.
+
+The part that confuses everyone:
+
+"inversely proportional to the square of distance"
+
+Sounds complicated. It's not.
+
+It just means:
+
+Double the distance → gravity becomes 4x weaker
+Triple → 9x weaker
+
+That's it.
+
+More mass = stronger pull
+More distance = way weaker pull
+
+The orbit question?
+
+A planet is basically falling toward the sun…
+but moving sideways fast enough to keep missing it.
+
+That's an orbit.
+
+Mass vs weight is also always on there.
+
+Mass = doesn't change
+Weight = depends on gravity
+
+Moon = 1/6 gravity → you weigh less
+
+If you're about to submit and not fully sure,
+
+don't risk it.
+
+Quick check here:
+👉 [gizmosanswerkey.shop](https://gizmosanswerkey.shop) (Gravity)
+
+Takes under a minute and saves you from dumb mistakes.
+Go submit and sleep.`
+  },
+  {
+    id: 'gravity-gizmo-11pm',
+    title: "It's 11pm and the Gravity Gizmo makes zero sense — here's the shortcut",
+    excerpt: "No judgment. If you're here at 11pm trying to finish the Gravity Gizmo, same. Here's the one concept that unlocks everything.",
+    date: '2026-04-24',
+    author: 'Student Story',
+    keywords: ['Gravity Gizmo answer key', 'Gravity Gizmo answers', 'inverse square law Gizmo', 'mass weight Gizmo', 'ExploreLearning Gravity Gizmo'],
+    content: `
+No judgment.
+
+If you're here at 11pm trying to finish the Gravity Gizmo,
+same.
+
+The part that confuses everyone:
+
+"inversely proportional to the square of distance"
+
+Sounds complicated. It's not.
+
+It just means:
+
+Double the distance → gravity becomes 4x weaker
+Triple → 9x weaker
+
+That's it.
+
+More mass = stronger pull
+More distance = way weaker pull
+
+The orbit question?
+
+A planet is basically falling toward the sun…
+but moving sideways fast enough to keep missing it.
+
+That's an orbit.
+
+Mass vs weight is also always on there.
+
+Mass = doesn't change
+Weight = depends on gravity
+
+Moon = 1/6 gravity → you weigh less
+
+If you're about to submit and not fully sure,
+
+don't risk it.
+
+Quick check here:
+👉 [gizmosanswerkey.shop](https://gizmosanswerkey.shop) (Gravity)
+
+Takes under a minute and saves you from dumb mistakes.
+Go submit and sleep.`,
+  },
+  {
     id: 'plate-tectonics-gizmo',
     title: 'Why your lab partner finishes the Plate Tectonics Gizmo in 10 minutes',
     excerpt: 'It\'s not that they\'re smarter. They just already understand the model. Everything in this Gizmo comes down to 3 things.',
