@@ -148,6 +148,36 @@ const gizmos: Gizmo[] = [
         questions: [
           { question: 'What landform is created when two continental plates collide?', answer: 'Mountain ranges are formed when two continental plates collide (e.g., the Himalayas).' },
           { question: 'What happens at a divergent boundary?', answer: 'At divergent boundaries, plates move apart and new crust is formed as magma rises to fill the gap.' },
+          { question: 'What occurs at a transform boundary?', answer: 'At transform boundaries, plates slide horizontally past each other, causing earthquakes. The San Andreas Fault in California is a well-known example.' },
+          { question: 'What is subduction?', answer: 'Subduction occurs at convergent boundaries when a denser oceanic plate slides beneath a lighter continental plate, sinking into the mantle. This can form trenches and volcanic arcs.' },
+          { question: 'Where do most earthquakes and volcanoes occur?', answer: 'Most earthquakes and volcanoes occur along plate boundaries, especially around the Pacific Plate — a region called the "Ring of Fire."' },
+        ],
+      },
+      {
+        title: 'Activity B – Earthquakes',
+        questions: [
+          { question: 'What is an earthquake?', answer: 'An earthquake is a sudden shaking of the ground caused by the release of energy from rocks that break or slip along a fault.' },
+          { question: 'What is a fault?', answer: 'A fault is a crack or fracture in Earth\'s crust along which rocks can move. Movement along faults causes earthquakes.' },
+          { question: 'What is the difference between the focus and the epicenter of an earthquake?', answer: 'The focus (hypocenter) is the underground point where the earthquake originates. The epicenter is the point on Earth\'s surface directly above the focus.' },
+          { question: 'What scale is used to measure earthquake magnitude, and what does it mean?', answer: 'The Richter scale (or moment magnitude scale) measures earthquake magnitude. Each whole number increase represents about 10× more shaking and ~31.6× more energy released.' },
+          { question: 'What are seismic waves, and what are the two main types?', answer: 'Seismic waves are energy waves released by an earthquake. Primary waves (P-waves) compress rock and travel through solids and liquids; Secondary waves (S-waves) shake rock side-to-side and only travel through solids.' },
+        ],
+      },
+      {
+        title: 'Activity C – Volcanoes',
+        questions: [
+          { question: 'How do volcanoes form at convergent plate boundaries?', answer: 'When an oceanic plate subducts beneath a continental plate, the sinking plate melts in the mantle. The resulting magma rises through the crust, forming a volcano.' },
+          { question: 'What is the difference between magma and lava?', answer: 'Magma is molten rock beneath Earth\'s surface. Once it erupts and reaches the surface, it is called lava.' },
+          { question: 'What are hot spots, and give one example?', answer: 'Hot spots are areas where unusually hot mantle material rises and melts through the crust, forming volcanoes not at plate boundaries. The Hawaiian Islands were formed by a hot spot.' },
+          { question: 'Why do some volcanic eruptions produce lava flows while others produce explosive ash clouds?', answer: 'Lava composition matters: low-silica (basaltic) magma is runny and flows easily; high-silica (rhyolitic) magma is thick, traps gases, and leads to explosive eruptions.' },
+        ],
+      },
+      {
+        title: 'Assessment Questions',
+        questions: [
+          { question: 'Explain why the Himalayas are still growing taller each year.', answer: 'The Indian Plate and Eurasian Plate are both continental plates that continue to converge. Since neither plate subducts, the collision keeps pushing rock upward, slowly increasing the height of the Himalayas.' },
+          { question: 'A geologist finds identical fossils and rock layers on the east coast of South America and the west coast of Africa. What does this evidence suggest?', answer: 'It supports the theory of continental drift — these continents were once joined together as part of the supercontinent Pangaea and have since separated through plate movement.' },
+          { question: 'Why can scientists use seismic wave data to learn about Earth\'s interior layers?', answer: 'P-waves travel through solids and liquids while S-waves only travel through solids. By tracking how these waves bend and stop at different depths, scientists can infer the composition and state (solid/liquid) of Earth\'s layers.' },
         ],
       },
     ],
@@ -220,6 +250,7 @@ const gizmos: Gizmo[] = [
           { question: 'What is an ecosystem?', answer: 'An ecosystem is a community of living organisms interacting with each other and their non-living environment.' },
           { question: 'What is the difference between a producer and a consumer?', answer: 'Producers make their own food through photosynthesis; consumers eat other organisms for energy.' },
           { question: 'What is a food chain?', answer: 'A food chain shows the transfer of energy from one organism to another in a sequence.' },
+          { question: 'What is the difference between biotic and abiotic factors?', answer: 'Biotic factors are living components of an ecosystem (plants, animals, bacteria). Abiotic factors are non-living components (temperature, water, sunlight, soil).' },
         ],
       },
       {
@@ -227,6 +258,35 @@ const gizmos: Gizmo[] = [
         questions: [
           { question: 'What happens to a food web if one species is removed?', answer: 'Removing one species can cause a cascade effect — populations of prey may increase and predators may decrease, disrupting the balance.' },
           { question: 'What percentage of energy is transferred from one trophic level to the next?', answer: 'Only about 10% of energy is transferred from one trophic level to the next; the rest is lost as heat.' },
+          { question: 'What is the difference between a food chain and a food web?', answer: 'A food chain is a single linear sequence of who eats whom. A food web is a more realistic network of interconnected food chains showing multiple feeding relationships.' },
+          { question: 'What are decomposers and why are they important?', answer: 'Decomposers (bacteria, fungi) break down dead organisms and waste, recycling nutrients back into the soil so producers can use them again.' },
+          { question: 'What is a trophic level?', answer: 'A trophic level is a feeding position in a food chain. Producers are at the first level; primary consumers (herbivores) are second; secondary consumers (carnivores) are third, and so on.' },
+        ],
+      },
+      {
+        title: 'Activity B – Population Dynamics',
+        questions: [
+          { question: 'What is carrying capacity?', answer: 'Carrying capacity is the maximum population size that an ecosystem can sustainably support given available food, water, shelter, and other resources.' },
+          { question: 'What are limiting factors in a population?', answer: 'Limiting factors are conditions that restrict population growth, such as food availability, predation, disease, and space.' },
+          { question: 'Describe the predator-prey relationship and how it affects population cycles.', answer: 'When prey is abundant, predator populations grow. More predators reduce prey numbers, which then causes predator populations to decline. This creates cyclical population fluctuations.' },
+          { question: 'What is the difference between density-dependent and density-independent limiting factors?', answer: 'Density-dependent factors (predation, disease, competition) become more intense as population grows. Density-independent factors (natural disasters, climate) affect populations regardless of their size.' },
+        ],
+      },
+      {
+        title: 'Activity C – Biomes and Biodiversity',
+        questions: [
+          { question: 'What is a biome?', answer: 'A biome is a large geographic region characterized by specific climate, vegetation, and animal communities (e.g., rainforest, desert, tundra, grassland).' },
+          { question: 'Why is biodiversity important for ecosystem stability?', answer: 'Greater biodiversity means more species filling different roles. If one species disappears, others can compensate, making the ecosystem more resilient to disturbances.' },
+          { question: 'What is an invasive species and how does it affect ecosystems?', answer: 'An invasive species is a non-native organism introduced to an ecosystem where it has no natural predators. It can outcompete native species, disrupting food webs and reducing biodiversity.' },
+          { question: 'What is ecological succession?', answer: 'Ecological succession is the gradual process by which an ecosystem changes over time. Primary succession starts on bare rock; secondary succession occurs after a disturbance in an existing ecosystem.' },
+        ],
+      },
+      {
+        title: 'Assessment Questions',
+        questions: [
+          { question: 'In a forest ecosystem, wolves are removed by hunters. Predict the effects on the deer and plant populations.', answer: 'Without wolves, deer populations would grow unchecked (no predator). Overgrazing by deer would then reduce plant populations, potentially damaging the entire ecosystem — a "trophic cascade."' },
+          { question: 'Why do energy pyramids always have fewer organisms at the top than at the bottom?', answer: 'Because only ~10% of energy transfers between levels, there is far less energy available to support organisms at higher trophic levels. It takes many plants to support a few herbivores and even fewer carnivores.' },
+          { question: 'How do human activities like deforestation affect ecosystem balance?', answer: 'Deforestation destroys habitats, reduces biodiversity, disrupts food webs, removes carbon sinks (increasing CO₂), causes soil erosion, and alters water cycles — all threatening ecosystem stability.' },
         ],
       },
     ],
@@ -245,6 +305,7 @@ const gizmos: Gizmo[] = [
           { question: 'What is natural selection?', answer: 'Natural selection is the process by which organisms with favorable traits survive and reproduce more successfully than those without.' },
           { question: 'Who proposed the theory of evolution by natural selection?', answer: 'Charles Darwin proposed the theory of evolution by natural selection.' },
           { question: 'What is a mutation?', answer: 'A mutation is a change in the DNA sequence that can introduce new traits into a population.' },
+          { question: 'What is variation in a population?', answer: 'Variation refers to differences in traits among individuals of the same species. Variation arises from genetic differences and is essential for natural selection to act upon.' },
         ],
       },
       {
@@ -252,6 +313,35 @@ const gizmos: Gizmo[] = [
         questions: [
           { question: 'What does "survival of the fittest" mean?', answer: '"Survival of the fittest" means that organisms best adapted to their environment are more likely to survive and pass on their genes.' },
           { question: 'How does camouflage help an organism survive?', answer: 'Camouflage helps organisms blend into their environment, making them harder for predators to spot.' },
+          { question: 'What are the four key components of natural selection?', answer: 'Variation (individuals differ), Inheritance (traits are passed to offspring), Selection (some traits improve survival/reproduction), Time (populations change over many generations).' },
+          { question: 'Give an example of natural selection in action.', answer: 'The peppered moth in England: before industrialization, light-colored moths survived better on light tree bark. After pollution darkened the bark, dark moths became more common because they were better camouflaged from predators.' },
+          { question: 'What is the difference between natural selection and artificial selection?', answer: 'Natural selection is driven by environmental pressures; artificial selection is driven by humans who selectively breed organisms for desired traits (e.g., dog breeds, crop plants).' },
+        ],
+      },
+      {
+        title: 'Activity B – Adaptation',
+        questions: [
+          { question: 'What is an adaptation?', answer: 'An adaptation is a heritable trait that increases an organism\'s ability to survive and reproduce in its environment.' },
+          { question: 'What is the difference between structural, behavioral, and physiological adaptations?', answer: 'Structural adaptations are physical features (e.g., thick fur). Behavioral adaptations are actions (e.g., migration). Physiological adaptations are internal body processes (e.g., hibernation, antifreeze proteins).' },
+          { question: 'How does antibiotic resistance in bacteria demonstrate natural selection?', answer: 'When antibiotics are applied, most bacteria die but a few with resistance mutations survive. These reproduce rapidly, passing on the resistance gene. Over time, the population becomes resistant — a real-world example of natural selection.' },
+          { question: 'What is convergent evolution?', answer: 'Convergent evolution occurs when unrelated species independently evolve similar traits due to similar environmental pressures (e.g., dolphins and sharks both have streamlined bodies for swimming).' },
+        ],
+      },
+      {
+        title: 'Activity C – Evidence for Evolution',
+        questions: [
+          { question: 'What types of evidence support the theory of evolution?', answer: 'Evidence includes: the fossil record (showing gradual change over time), homologous structures (similar anatomy in different species), DNA comparisons, embryology (similar embryo development), and direct observation of natural selection.' },
+          { question: 'What are homologous structures and what do they indicate?', answer: 'Homologous structures are anatomically similar structures in different species that suggest common ancestry (e.g., the arm bones of humans, whales, and bats share the same basic structure despite different functions).' },
+          { question: 'How does the fossil record provide evidence for evolution?', answer: 'The fossil record shows a chronological sequence of organisms from simple to complex over millions of years, including transitional fossils that show intermediate forms between ancestral and descendant species.' },
+          { question: 'What is speciation?', answer: 'Speciation is the process by which one species splits into two or more distinct species, typically when populations become isolated and evolve separately over long periods.' },
+        ],
+      },
+      {
+        title: 'Assessment Questions',
+        questions: [
+          { question: 'A population of beetles lives on green leaves. Most are green, but some are brown. Predict what happens after a bird predator is introduced.', answer: 'Brown beetles are more visible on green leaves and will be eaten more often. Green beetles survive and reproduce more. Over generations, the population will shift to mostly green beetles — natural selection favoring camouflage.' },
+          { question: 'Why does natural selection act on phenotypes rather than genotypes directly?', answer: 'Natural selection acts on observable traits (phenotype) — what predators see, what helps the organism find food, etc. The underlying genotype is only selected indirectly through its effect on the phenotype.' },
+          { question: 'Can one individual organism evolve during its lifetime? Explain.', answer: 'No — evolution occurs at the population level across generations. An individual cannot change its genes through experience. A person lifting weights becomes stronger, but that change is not inherited by their children.' },
         ],
       },
     ],
@@ -403,6 +493,7 @@ const gizmos: Gizmo[] = [
           { question: 'What is a wave?', answer: 'A wave is a disturbance that transfers energy from one place to another without transferring matter.' },
           { question: 'What is the difference between transverse and longitudinal waves?', answer: 'In transverse waves, particles move perpendicular to wave direction; in longitudinal waves, particles move parallel to wave direction.' },
           { question: 'What is wavelength?', answer: 'Wavelength is the distance between two consecutive crests (or troughs) of a wave, measured in meters.' },
+          { question: 'What is frequency?', answer: 'Frequency is the number of complete wave cycles that pass a point per second, measured in hertz (Hz).' },
         ],
       },
       {
@@ -410,6 +501,36 @@ const gizmos: Gizmo[] = [
         questions: [
           { question: 'What is the relationship between frequency and wavelength?', answer: 'Frequency and wavelength are inversely related: as frequency increases, wavelength decreases (wave speed = frequency × wavelength).' },
           { question: 'What is amplitude and what does it represent?', answer: 'Amplitude is the maximum displacement of a wave from its rest position; it represents the energy of the wave.' },
+          { question: 'What is the wave speed formula?', answer: 'Wave speed (v) = frequency (f) × wavelength (λ). For example, a wave with frequency 5 Hz and wavelength 2 m travels at 10 m/s.' },
+          { question: 'What is the period of a wave?', answer: 'The period (T) is the time it takes for one complete wave cycle to pass a point, measured in seconds. Period = 1 ÷ frequency.' },
+          { question: 'A wave has a frequency of 10 Hz and a wavelength of 3 m. What is its speed?', answer: 'v = f × λ = 10 × 3 = 30 m/s.' },
+        ],
+      },
+      {
+        title: 'Activity B – Wave Interactions',
+        questions: [
+          { question: 'What is reflection?', answer: 'Reflection occurs when a wave bounces off a surface and changes direction. The angle of incidence equals the angle of reflection.' },
+          { question: 'What is refraction?', answer: 'Refraction is the bending of a wave as it passes from one medium into another with a different speed (e.g., light bending when it enters water from air).' },
+          { question: 'What is diffraction?', answer: 'Diffraction is the bending and spreading of waves around obstacles or through openings. Diffraction is most noticeable when the opening is similar in size to the wavelength.' },
+          { question: 'What is wave interference?', answer: 'Interference occurs when two waves overlap. Constructive interference produces a larger amplitude (waves add together); destructive interference reduces amplitude (waves cancel each other out).' },
+          { question: 'What is the Doppler effect?', answer: 'The Doppler effect is the change in observed frequency (pitch or color) of a wave when the source or observer is moving. A moving source creates compressed waves ahead (higher frequency) and stretched waves behind (lower frequency).' },
+        ],
+      },
+      {
+        title: 'Activity C – Sound and Light Waves',
+        questions: [
+          { question: 'How does sound travel, and what type of wave is it?', answer: 'Sound is a longitudinal mechanical wave that travels by compressing and expanding the medium (air, water, or solids). It cannot travel through a vacuum.' },
+          { question: 'How does the speed of sound vary in different media?', answer: 'Sound travels faster in denser/stiffer media: fastest in solids, then liquids, then gases. Sound travels at ~343 m/s in air but ~1,480 m/s in water.' },
+          { question: 'What is the electromagnetic spectrum?', answer: 'The electromagnetic spectrum is the range of all electromagnetic waves ordered by frequency/wavelength: radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, and gamma rays.' },
+          { question: 'How is the pitch of a sound related to frequency?', answer: 'Higher frequency sound waves produce higher pitch; lower frequency produces lower pitch. Humans can hear frequencies between approximately 20 Hz and 20,000 Hz.' },
+        ],
+      },
+      {
+        title: 'Assessment Questions',
+        questions: [
+          { question: 'A sound wave has a frequency of 440 Hz (musical note A). If the speed of sound is 340 m/s, what is its wavelength?', answer: 'λ = v ÷ f = 340 ÷ 440 ≈ 0.77 meters.' },
+          { question: 'Why does light bend when it passes from air into glass?', answer: 'Light slows down when it enters a denser medium like glass. This change in speed causes the wave to bend (refract) at the boundary. The greater the speed change, the more bending occurs.' },
+          { question: 'A boat on the ocean creates waves. Explain why a floating buoy bobs up and down but does not move forward with the waves.', answer: 'Waves transfer energy, not matter. The water particles (and the buoy) move in a circular path locally — up, forward, down, backward — returning to their original position. The wave energy moves forward, but the water itself does not.' },
         ],
       },
     ],
